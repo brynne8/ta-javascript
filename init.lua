@@ -52,6 +52,7 @@ textadept.editing.autocompleters.javascript = function()
   local symbol = ''
   local rawsymbol, op, part = line:sub(1, pos):match('([%w_%$#%.=\'"%[%]/%(%)]-)(%.?)([%w_%$]*)$')
   -- identify literals like "'foo'." and "[1, 2, 3].".
+  rawsymbol = rawsymbol:gsub('^window%.', '')
   if rawsymbol then
     for patt, type in pairs(M.symbol_subst) do
       if rawsymbol:find(patt) then
@@ -107,6 +108,29 @@ textadept.editing.autocompleters.javascript = function()
     end
   end
   return #part, list
+end
+
+-- Snippets.
+
+if type(snippets) == 'table' then
+---
+-- Table of JS-specific snippets.
+-- @class table
+-- @name _G.snippets.javascript
+  snippets.javascript = {
+    ['do'] = 'do {\n\t%0\n} while (%1)',
+    ['if'] = 'if (%1) {\n\t%0\n}',
+    eif = 'else if (%1) {\n\t%0\n}',
+    ['else'] = 'else {\n\t%0\n}',
+    interval = 'setInterval(%0(function), %1(delay))',
+    timeout = 'setTimeout(%0(function), %1(delay))',
+    ['for'] = 'for (%1; %2; %3) {\n\t%0\n}',
+    fori = 'for (%1 in %2) {\n\t%0\n}',
+    ['while'] = 'while (%1) {\n\t%0\n}',
+    log = 'console.log(%1)',
+    func = 'function %1(name) (%2) {\n\t%0\n}',
+    afunc = 'function (%1) {\n\t%0\n}'
+  }
 end
 
 return M
