@@ -34,6 +34,8 @@ M.symbol_subst = {
   ['^[\'"].*[\'"]$'] = 'String',
   ['^%[.*%]$'] = 'Array',
   ['^/.*/[gimuy]*$'] = 'RegExp',
+  ['^localStorage$'] = 'Storage',
+  ['^sessionStorage$'] = 'Storage',
   ['^%$'] = 'jQuery'
 }
 
@@ -95,7 +97,8 @@ textadept.editing.autocompleters.javascript = function()
           hasFound = true
           local fields = line:match(';"\t(.*)$')
           local k, class = fields:sub(1, 1), fields:match('class:(%S+)') or ''
-          if class == symbol or (op == '' and class == 'window') then
+          if class == symbol or (op == '' and class == 'window')
+                             or (op == '.' and class == 'Object') then
             list[#list + 1] = string.format('%s%s%d', name, sep, xpms[k])
             list[name] = true
           end
