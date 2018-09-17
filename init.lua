@@ -95,7 +95,7 @@ textadept.editing.autocompleters.javascript = function()
           hasFound = true
           local fields = line:match(';"\t(.*)$')
           local k, class = fields:sub(1, 1), fields:match('class:(%S+)') or ''
-          if class == symbol and (op ~= ':' or k == 'f') then
+          if class == symbol or (op == '' and class == 'window') then
             list[#list + 1] = string.format('%s%s%d', name, sep, xpms[k])
             list[name] = true
           end
