@@ -50,7 +50,7 @@ textadept.editing.autocompleters.javascript = function()
   local line, pos = buffer:get_cur_line()
   
   local symbol = ''
-  local rawsymbol, op, part = line:sub(1, pos):match('([%w_%$%.\'"%[%]/%(%)]-)(%.?)([%w_%$]*)$')
+  local rawsymbol, op, part = line:sub(1, pos):match('([%w_%$#%.=\'"%[%]/%(%)]-)(%.?)([%w_%$]*)$')
   -- identify literals like "'foo'." and "[1, 2, 3].".
   if rawsymbol then
     for patt, type in pairs(M.symbol_subst) do
@@ -98,7 +98,7 @@ textadept.editing.autocompleters.javascript = function()
           local fields = line:match(';"\t(.*)$')
           local k, class = fields:sub(1, 1), fields:match('class:(%S+)') or ''
           if class == symbol or (op == '' and class == 'window')
-                             or (op == '.' and class == 'Object') then
+                             or (op == '.' and class == 'Object' and symbol ~= 'jQuery') then
             list[#list + 1] = string.format('%s%s%d', name, sep, xpms[k])
             list[name] = true
           end
