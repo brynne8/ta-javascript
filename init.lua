@@ -70,15 +70,15 @@ textadept.editing.autocompleters.javascript = function()
     if symbol == '' and part == '' then return nil end -- nothing to complete
     
     local buffer = buffer
-    local assignment = symbol:gsub('(%p)', '%%%1')..'%s*=%s*new%s+(.*)$'
+    local assignment = symbol:gsub('(%p)', '%%%1')..'%s*=%s*(.*)$'
     for i = buffer:line_from_position(buffer.current_pos) - 1, 0, -1 do
       local expr = buffer:get_line(i):match(assignment)
       if expr then
         for patt, type in pairs(M.expr_types) do
           if expr:find(patt) then symbol = type break end
         end
-        if expr:find('^[%w_.]+%s*%b()%s*$') then
-          symbol = expr:match('^([%w_.]+)%s*%b()%s*$') -- e.g. a = new Foo()
+        if expr:find('^new%s+[%w_.]+%s*%b()%s*$') then
+          symbol = expr:match('^new%s+([%w_.]+)%s*%b()%s*$') -- e.g. a = new Foo()
           break
         end
       end
