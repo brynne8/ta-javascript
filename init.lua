@@ -127,6 +127,8 @@ if type(snippets) == 'table' then
     ['for'] = 'for (%1; %2; %3) {\n\t%0\n}',
     fori = 'for (%1 in %2) {\n\t%0\n}',
     ['while'] = 'while (%1) {\n\t%0\n}',
+    try = 'try {\n\t%1\n} catch (%2(e)) {\n\t%3\n}',
+    ['/*'] = '/**\n * %0\n */',
     log = 'console.log(%1)',
     func = 'function %1(name) (%2) {\n\t%0\n}',
     afunc = 'function (%1) {\n\t%0\n}'
