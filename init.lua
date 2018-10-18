@@ -50,7 +50,7 @@ textadept.editing.autocompleters.javascript = function()
   local line, pos = buffer:get_cur_line()
   
   local symbol = ''
-  local rawsymbol, op, part = line:sub(1, pos):match('([%w_%$#%.=\'"%[%]/%(%)]-)(%.?)([%w_%$]*)$')
+  local rawsymbol, op, part = line:sub(1, pos):match('([%w_%$#%.%-=\'"%[%]/%(%)]-)(%.?)([%w_%$]*)$')
   -- identify literals like "'foo'." and "[1, 2, 3].".
   rawsymbol = rawsymbol:gsub('^window%.', '')
   if rawsymbol then
@@ -69,17 +69,19 @@ textadept.editing.autocompleters.javascript = function()
     symbol = rawsymbol:match('([%w_%$%.]*)$')
     if symbol == '' and part == '' then return nil end -- nothing to complete
     
-    local buffer = buffer
-    local assignment = symbol:gsub('(%p)', '%%%1')..'%s*=%s*(.*)$'
-    for i = buffer:line_from_position(buffer.current_pos) - 1, 0, -1 do
-      local expr = buffer:get_line(i):match(assignment)
-      if expr then
-        for patt, type in pairs(M.expr_types) do
-          if expr:find(patt) then symbol = type break end
-        end
-        if expr:find('^new%s+[%w_.]+%s*%b()%s*$') then
-          symbol = expr:match('^new%s+([%w_.]+)%s*%b()%s*$') -- e.g. a = new Foo()
-          break
+    if symbol ~= '' then
+      local buffer = buffer
+      local assignment = symbol:gsub('(%p)', '%%%1')..'%s*=%s*(.*)$'
+      for i = buffer:line_from_position(buffer.current_pos) - 1, 0, -1 do
+        local expr = buffer:get_line(i):match(assignment)
+        if expr then
+          for patt, type in pairs(M.expr_types) do
+            if expr:find(patt) then symbol = type break end
+          end
+          if expr:find('^new%s+[%w_.]+%s*%b()%s*$') then
+            symbol = expr:match('^new%s+([%w_.]+)%s*%b()%s*$') -- e.g. a = new Foo()
+            break
+          end
         end
       end
     end
