@@ -40,6 +40,7 @@ arity	_	0;"	f	class:RegExp
 arity	_	0;"	f	class:String
 Array	_	0;"	c	
 asin	_	0;"	m	class:Math
+assign	_	0;"	m class:Object
 atan	_	0;"	m	class:Math
 atan2	_	0;"	m	class:Math
 atob	_	0;"	m	class:window
