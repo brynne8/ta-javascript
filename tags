@@ -320,6 +320,7 @@ isWindow	_	0;"	m	class:jQuery
 isXMLDoc	_	0;"	m	class:jQuery
 join	_	0;"	m	class:Array
 jQuery	_	0;"	m	
+JSON	_	0;"	c
 key	_	0;"	m	class:Object
 keydown	_	0;"	m	class:jQuery
 keypress	_	0;"	m	class:jQuery
@@ -448,6 +449,7 @@ parentNode	_	0;"	f	class:element
 parents	_	0;"	m	class:jQuery
 parentsUntil	_	0;"	m	class:jQuery
 parse	_	0;"	m	class:Date
+parse	_	0;"	m	class:JSON
 parseJSON	_	0;"	m	class:jQuery
 parseXML	_	0;"	m	class:jQuery
 personalbar	_	0;"	f	class:window
@@ -617,6 +619,7 @@ stopImmediatePropagation	_	0;"	m	class:event
 StopIteration	_	0;"	c	
 strictErrorChecking	_	0;"	f	class:document
 String	_	0;"	c	
+stringify	_	0;"	m	class:JSON
 style	_	0;"	f	class:element
 sub	_	0;"	m	class:jQuery
 submit	_	0;"	m	class:jQuery
