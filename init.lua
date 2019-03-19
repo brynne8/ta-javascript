@@ -6,7 +6,7 @@ local M = {}
 events.connect(events.LEXER_LOADED, function(lang)
   if lang == 'javascript' then
     buffer.use_tabs = false
-    buffer.tab_width = 2
+    buffer.tab_width = 4
   end
 end)
 
@@ -34,15 +34,28 @@ M.symbol_subst = {
   ['^[\'"].*[\'"]$'] = 'String',
   ['^%[.*%]$'] = 'Array',
   ['^/.*/[gimuy]*$'] = 'RegExp',
-  ['^localStorage$'] = 'Storage',
-  ['^sessionStorage$'] = 'Storage',
   ['^%$'] = 'jQuery'
+}
+
+M.child_classes = {
+  ['Storage'] = { 'localStorage', 'sessionStorage' },
+  ['Node'] = { 'Element', 'document' }
 }
 
 local XPM = textadept.editing.XPM_IMAGES
 local xpms = {
   c = XPM.CLASS, m = XPM.METHOD, f = XPM.VARIABLE
 }
+
+local function has_value (tab, val)
+  if not tab then
+    return false
+  end
+  for index, value in ipairs(tab) do
+    if value == val then return true end
+  end
+  return false
+end
 
 textadept.editing.autocompleters.javascript = function()
   local list = {}
@@ -100,8 +113,12 @@ textadept.editing.autocompleters.javascript = function()
           hasFound = true
           local fields = line:match(';"\t(.*)$')
           local k, class = fields:sub(1, 1), fields:match('class:(%S+)') or ''
+          
           if class == symbol or (op == '' and class == 'window')
                              or (op == '.' and class == 'Object' and symbol ~= 'jQuery') then
+            list[#list + 1] = string.format('%s%s%d', name, sep, xpms[k])
+            list[name] = true
+          elseif has_value(M.child_classes[class], symbol) then
             list[#list + 1] = string.format('%s%s%d', name, sep, xpms[k])
             list[name] = true
           end
