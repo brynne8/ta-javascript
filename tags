@@ -231,7 +231,8 @@ getPrototypeOf	_	0;"	m	class:Object
 getScript	_	0;"	m	class:jQuery
 getSeconds	_	0;"	m	class:Date
 getSelection	_	0;"	m	class:window
-gettime	_	0;"	m	class:Date
+getTime	_	0;"	m	class:Date
+getTimezoneOffset	_	0;"	m	class:Date
 getUserdata	_	0;"	m	class:Node
 getUTCDate	_	0;"	m	class:Date
 getUTCDay	_	0;"	m	class:Date
@@ -245,7 +246,6 @@ getYear	_	0;"	m	class:Date
 global	_	0;"	f	class:RegExp
 globalEval	_	0;"	m	class:jQuery
 grep	_	0;"	m	class:jQuery
-gTetimezoneOffset	_	0;"	m	class:Date
 has	_	0;"	m	class:jQuery
 hasAttribute	_	0;"	m	class:Element
 hasAttributeNS	_	0;"	m	class:Element
