@@ -61,7 +61,7 @@ textadept.editing.autocompleters.javascript = function()
   local list = {}
   -- Retrieve the symbol behind the caret.
   local line, pos = buffer:get_cur_line()
-  
+
   local symbol = ''
   local rawsymbol, op, part = line:sub(1, pos):match('([%w_%$#%.%-=\'"%[%]/%(%)]-)(%.?)([%w_%$]*)$')
   -- identify literals like "'foo'." and "[1, 2, 3].".
@@ -76,12 +76,12 @@ textadept.editing.autocompleters.javascript = function()
   elseif part == '' then
     return nil -- nothing to complete
   end
-  
+
   -- Attempt to identify the symbol type.
   if rawsymbol and symbol == '' then
     symbol = rawsymbol:match('([%w_%$%.]*)$')
     if symbol == '' and part == '' then return nil end -- nothing to complete
-    
+
     if symbol ~= '' then
       local buffer = buffer
       local assignment = symbol:gsub('(%p)', '%%%1')..'%s*=%s*(.*)$'
@@ -112,15 +112,17 @@ textadept.editing.autocompleters.javascript = function()
         elseif not list[name] then
           hasFound = true
           local fields = line:match(';"\t(.*)$')
-          local k, class = fields:sub(1, 1), fields:match('class:(%S+)') or ''
-          
-          if class == symbol or (op == '' and class == 'window')
-                             or (op == '.' and class == 'Object' and symbol ~= 'jQuery') then
-            list[#list + 1] = string.format('%s%s%d', name, sep, xpms[k])
-            list[name] = true
-          elseif has_value(M.child_classes[class], symbol) then
-            list[#list + 1] = string.format('%s%s%d', name, sep, xpms[k])
-            list[name] = true
+          if fields ~= nil then
+            local k, class = fields:sub(1, 1), fields:match('class:(%S+)') or ''
+
+            if class == symbol or (op == '' and class == 'window')
+                               or (op == '.' and class == 'Object' and symbol ~= 'jQuery') then
+              list[#list + 1] = string.format('%s%s%d', name, sep, xpms[k])
+              list[name] = true
+            elseif has_value(M.child_classes[class], symbol) then
+              list[#list + 1] = string.format('%s%s%d', name, sep, xpms[k])
+              list[name] = true
+            end
           end
         end
       end
