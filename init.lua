@@ -57,23 +57,6 @@ local function has_value (tab, val)
   return false
 end
 
--- case insensitive pattern
--- https://stackoverflow.com/questions/11401890/case-insensitive-lua-pattern-matching
-function ipattern(pattern)
-  -- find an optional '%' (group 1) followed by any character (group 2)
-  local p = pattern:gsub("(%%?)(.)", function(percent, letter)
-    if percent ~= "" or not letter:match("%a") then
-      -- if the '%' matched, or `letter` is not a letter, return "as is"
-      return percent .. letter
-    else
-      -- else, return a case-insensitive character class of the matched letter
-      return string.format("[%s%s]", letter:lower(), letter:upper())
-    end
-  end)
-
-  return p
-end
-
 textadept.editing.autocompleters.javascript = function()
   local list = {}
   -- Retrieve the symbol behind the caret.
@@ -117,7 +100,7 @@ textadept.editing.autocompleters.javascript = function()
     end
   end
   -- Search through ctags for completions for that symbol.
-  local name_patt = ipattern('^'..part)
+  local name_patt = '^'..part
   local sep = string.char(buffer.auto_c_type_separator)
   for i = 1, #M.tags do
     if lfs.attributes(M.tags[i]) then

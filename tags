@@ -479,6 +479,7 @@ reject	_	0;"	m	class:deferred
 rejectWith	_	0;"	m	class:deferred
 relatedTarget	_	0;"	f	class:event
 releaseEvents	_	0;"	m	class:window
+removAttr	_	0;"	m	class:jQuery
 remove	_	0;"	m	class:jQuery
 removeAttr	_	0;"	m	class:jQuery
 removeAttribute	_	0;"	m	class:Element
