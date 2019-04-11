@@ -57,21 +57,21 @@ local function has_value (tab, val)
   return false
 end
 
--- case insensitive pattern	
--- https://stackoverflow.com/questions/11401890/case-insensitive-lua-pattern-matching	
-function ipattern(pattern)	
-  -- find an optional '%' (group 1) followed by any character (group 2)	
-  local p = pattern:gsub("(%%?)(.)", function(percent, letter)	
-    if percent ~= "" or not letter:match("%a") then	
-      -- if the '%' matched, or `letter` is not a letter, return "as is"	
-      return percent .. letter	
-    else	
-      -- else, return a case-insensitive character class of the matched letter	
-      return string.format("[%s%s]", letter:lower(), letter:upper())	
-    end	
-  end)	
+-- case insensitive pattern
+-- https://stackoverflow.com/questions/11401890/case-insensitive-lua-pattern-matching
+function ipattern(pattern)
+  -- find an optional '%' (group 1) followed by any character (group 2)
+  local p = pattern:gsub("(%%?)(.)", function(percent, letter)
+    if percent ~= "" or not letter:match("%a") then
+      -- if the '%' matched, or `letter` is not a letter, return "as is"
+      return percent .. letter
+    else
+      -- else, return a case-insensitive character class of the matched letter
+      return string.format("[%s%s]", letter:lower(), letter:upper())
+    end
+  end)
 
-  return p	
+  return p
 end
 
 textadept.editing.autocompleters.javascript = function()
