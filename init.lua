@@ -71,7 +71,7 @@ function ipattern(pattern)
     end	
   end)	
 
-   return p	
+  return p	
 end
 
 textadept.editing.autocompleters.javascript = function()
