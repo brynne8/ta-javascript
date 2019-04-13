@@ -108,8 +108,8 @@ textadept.editing.autocompleters.javascript = function()
           for patt, type in pairs(M.expr_types) do
             if expr:find(patt) then symbol = type break end
           end
-          if expr:find('^new%s+[%w_.]+%s*%b()%s*$') then
-            symbol = expr:match('^new%s+([%w_.]+)%s*%b()%s*$') -- e.g. a = new Foo()
+          if expr:find('^new%s+[%w_.]+%s*%b()%s-;?%s*$') then
+            symbol = expr:match('^new%s+([%w_.]+)%s*%b()%s-;?%s*$') -- e.g. a = new Foo()
             break
           end
         end
