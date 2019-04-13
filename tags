@@ -307,7 +307,7 @@ isXMLDoc	_	0;"	m	class:jQuery
 join	_	0;"	m	class:Array
 jQuery	_	0;"	m	
 JSON	_	0;"	c
-key	_	0;"	m	class:Object
+keys	_	0;"	m	class:Object
 keydown	_	0;"	m	class:jQuery
 keypress	_	0;"	m	class:jQuery
 keyup	_	0;"	m	class:jQuery
