@@ -464,7 +464,9 @@ push	_	0;"	m	class:Array
 pushStack	_	0;"	m	class:jQuery
 QName	_	0;"	c	
 QueryInterface	_	0;"	m	class:window
+querySelector	_	0;"	m	class:document
 querySelector	_	0;"	m	class:Element
+querySelectorAll	_	0;"	m	class:document
 querySelectorAll	_	0;"	m	class:Element
 queue	_	0;"	m	class:jQuery
 random	_	0;"	m	class:Math
