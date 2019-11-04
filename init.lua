@@ -1,4 +1,5 @@
 -- Copyright 2018 Alexander Misel. See LICENSE.
+local re = require('re')
 
 local M = {}
 
@@ -33,8 +34,7 @@ M.expr_types = {
 M.symbol_subst = {
   ['^[\'"].*[\'"]$'] = 'String',
   ['^%[.*%]$'] = 'Array',
-  ['^/.*/[gimuy]*$'] = 'RegExp',
-  ['^%$'] = 'jQuery'
+  ['^/.*/[gimuy]*$'] = 'RegExp'
 }
 
 M.child_classes = {
@@ -42,9 +42,18 @@ M.child_classes = {
   ['Node'] = { 'Element', 'document' }
 }
 
+M.jq_expr = re.compile[[
+  jq_line      <- jq_expr / jq_expr_nonstart
+  jq_expr_nonstart <- [^a-zA-Z0-9_$] jq_expr / . jq_expr_nonstart
+  jq_expr      <- jq_selector '.' {%a*}
+  jq_selector  <- '$' balanced func*
+  func         <- '.' %a+ balanced
+  balanced     <- '(' ([^()] / balanced)* ')'
+]]
+
 local XPM = textadept.editing.XPM_IMAGES
 local xpms = {
-  c = XPM.CLASS, m = XPM.METHOD, f = XPM.VARIABLE
+  c = XPM.CLASS, f = XPM.METHOD, m = XPM.VARIABLE
 }
 
 local function has_value (tab, val)
@@ -80,21 +89,28 @@ textadept.editing.autocompleters.javascript = function()
   local line, pos = buffer:get_cur_line()
 
   local symbol = ''
-  local rawsymbol, op, part = line:sub(1, pos):match('([%w_%$#%.%-=\'"%[%]/%(%)]-)(%.?)([%w_%$]*)$')
-  -- identify literals like "'foo'." and "[1, 2, 3].".
-  rawsymbol = rawsymbol:gsub('^window%.', '')
-  if rawsymbol then
-    for patt, type in pairs(M.symbol_subst) do
-      if rawsymbol:find(patt) then
-        symbol = type
-        break
+  local rawsymbol, op, part
+  part = re.match(line:sub(1, pos), M.jq_expr)
+  if part then
+    symbol, op = 'jQuery', '.'
+  else
+    rawsymbol, op, part = line:sub(1, pos):match('([%w_%$%.]-)(%.?)([%w_%$]*)$')
+    -- identify literals like "'foo'." and "[1, 2, 3].".
+    rawsymbol = rawsymbol:gsub('^window%.', '')
+    if rawsymbol then
+      for patt, type in pairs(M.symbol_subst) do
+        if rawsymbol:find(patt) then
+          symbol = type
+          break
+        end
       end
+    elseif part == '' then
+      return nil -- nothing to complete
     end
-  elseif part == '' then
-    return nil -- nothing to complete
   end
 
   -- Attempt to identify the symbol type.
+  local line_num = buffer:line_from_position(buffer.current_pos)
   if rawsymbol and symbol == '' then
     symbol = rawsymbol:match('([%w_%$%.]*)$')
     if symbol == '' and part == '' then return nil end -- nothing to complete
@@ -102,7 +118,7 @@ textadept.editing.autocompleters.javascript = function()
     if symbol ~= '' then
       local buffer = buffer
       local assignment = symbol:gsub('(%p)', '%%%1')..'%s*=%s*(.*)$'
-      for i = buffer:line_from_position(buffer.current_pos) - 1, 0, -1 do
+      for i = line_num - 1, 0, -1 do
         local expr = buffer:get_line(i):match(assignment)
         if expr then
           for patt, type in pairs(M.expr_types) do
