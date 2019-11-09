@@ -16,38 +16,35 @@ end)
 -- List of ctags files to use for autocompletion.
 -- @class table
 -- @name tags
-M.tags = {_HOME..'/modules/js/tags', _USERHOME..'/modules/js/tags'}
+M.tags = { _USERHOME..'/modules/js/browser.tags', _USERHOME..'/modules/js/ecma.tags',
+  _USERHOME..'/modules/js/jquery.tags' }
 ---
 -- Map of expression patterns to their types.
 -- Expressions are expected to match after the '=' sign of a statement.
 -- @class table
 -- @name expr_types
 M.expr_types = {
-  ['^[\'"`]'] = 'String',
-  ['^%['] = 'Array',
-  ['^{'] = 'Object',
-  ['^function'] = 'Function',
-  ['^/'] = 'RegExp',
-  ['^%$%(.-%)'] = 'jQuery'
+  ['^[\'"`]'] = '+String',
+  ['^%['] = '+Array',
+  ['^{'] = '+Object',
+  ['^function'] = '+Function',
+  ['^/'] = '+RegExp',
+  ['^%$%(.-%)'] = 'jQuery.fn'
 }
 
 M.symbol_subst = {
-  ['^[\'"].*[\'"]$'] = 'String',
-  ['^%[.*%]$'] = 'Array',
-  ['^/.*/[gimuy]*$'] = 'RegExp'
+  ['^[\'"`].*[\'"`]$'] = '+String',
+  ['^%[.*%]$'] = '+Array',
+  ['^/.+/[gimuy]*$'] = '+RegExp'
 }
 
-M.child_classes = {
-  ['Storage'] = { 'localStorage', 'sessionStorage' },
-  ['Node'] = { 'Element', 'document' }
-}
-
-M.jq_expr = re.compile[[
-  jq_line      <- jq_expr / jq_expr_nonstart
-  jq_expr_nonstart <- [^a-zA-Z0-9_$] jq_expr / . jq_expr_nonstart
-  jq_expr      <- jq_selector '.' {%a*}
-  jq_selector  <- '$' balanced func*
+M.js_expr = re.compile[[
+  js_line      <- {| js_expr !. / js_expr_nonstart |}
+  js_expr_nonstart <- ([^a-zA-Z0-9_$] js_expr / . js_expr_nonstart) !. / . js_expr_nonstart
+  js_expr      <- ((jq_selector / prev_token) '.' / '') {:part: %a* :}
+  jq_selector  <- {:symbol: '$' balanced -> 'jQuery.fn' :} func*
   func         <- '.' %a+ balanced
+  prev_token   <- {:symbol: [a-zA-Z0-9_$/'"`]+ :} balanced?
   balanced     <- '(' ([^()] / balanced)* ')'
 ]]
 
@@ -90,22 +87,21 @@ textadept.editing.autocompleters.javascript = function()
 
   local symbol = ''
   local rawsymbol, op, part
-  part = re.match(line:sub(1, pos), M.jq_expr)
-  if part then
-    symbol, op = 'jQuery', '.'
+  local matched = M.js_expr:match(line:sub(1, pos))
+  if matched then
+    rawsymbol, part = matched.symbol, matched.part
+    ui.statusbar_text = part
   else
-    rawsymbol, op, part = line:sub(1, pos):match('([%w_%$%.]-)(%.?)([%w_%$]*)$')
-    -- identify literals like "'foo'." and "[1, 2, 3].".
-    rawsymbol = rawsymbol:gsub('^window%.', '')
-    if rawsymbol then
-      for patt, type in pairs(M.symbol_subst) do
-        if rawsymbol:find(patt) then
-          symbol = type
-          break
-        end
+    return
+  end
+  
+  if rawsymbol then
+    rawsymbol = rawsymbol:gsub('^window$', '')
+    for patt, type in pairs(M.symbol_subst) do
+      if rawsymbol:find(patt) then
+        symbol = type
+        break
       end
-    elseif part == '' then
-      return nil -- nothing to complete
     end
   end
 
@@ -113,47 +109,52 @@ textadept.editing.autocompleters.javascript = function()
   local line_num = buffer:line_from_position(buffer.current_pos)
   if rawsymbol and symbol == '' then
     symbol = rawsymbol:match('([%w_%$%.]*)$')
-    if symbol == '' and part == '' then return nil end -- nothing to complete
 
     if symbol ~= '' then
       local buffer = buffer
-      local assignment = symbol:gsub('(%p)', '%%%1')..'%s*=%s*(.*)$'
+      local assignment = symbol:gsub('(%p)', '%%%1')..'%s*=%s*([^;]-)%s*;?%s*$'
       for i = line_num - 1, 0, -1 do
         local expr = buffer:get_line(i):match(assignment)
+        ui.statusbar_text = expr
         if expr then
           for patt, type in pairs(M.expr_types) do
             if expr:find(patt) then symbol = type break end
           end
-          if expr:find('^new%s+[%w_.]+%s*%b()%s-;?%s*$') then
-            symbol = expr:match('^new%s+([%w_.]+)%s*%b()%s-;?%s*$') -- e.g. a = new Foo()
+          local new_instance = expr:match('^new%s+([%w_.]+)%s*%b()$')
+          if new_instance then
+            symbol = '+' .. new_instance -- e.g. a = new Foo()
             break
           end
         end
       end
     end
   end
+  -- ui.statusbar_text = symbol
   -- Search through ctags for completions for that symbol.
   local name_patt = '^'..part
   local name_ipatt = ipattern('^'..part)
   local sep = string.char(buffer.auto_c_type_separator)
+  ::start::
   for i = 1, #M.tags do
     if lfs.attributes(M.tags[i]) then
       local hasFound = false
       for line in io.lines(M.tags[i]) do
         local name = line:match('^%S+')
-        if not name:find(name_patt) then
+        if name == symbol then
+          local ret = line:match('typeref:(.*)$')
+          if ret then
+            symbol = ret
+            goto start
+          end
+        elseif not name:find(name_patt) then
           if hasFound and not name:find(name_ipatt) then break end
         elseif not list[name] then
           hasFound = true
           local fields = line:match(';"\t(.*)$')
-          if fields ~= nil then
+          if fields then
             local k, class = fields:sub(1, 1), fields:match('class:(%S+)') or ''
 
-            if class == symbol or (op == '' and class == 'window')
-                               or (op == '.' and class == 'Object' and symbol ~= 'jQuery') then
-              list[#list + 1] = string.format('%s%s%d', name, sep, xpms[k])
-              list[name] = true
-            elseif has_value(M.child_classes[class], symbol) then
+            if class == symbol then
               list[#list + 1] = string.format('%s%s%d', name, sep, xpms[k])
               list[name] = true
             end

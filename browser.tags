@@ -1,0 +1,1055 @@
+<i>	_	0;"	m	class:+NodeList	typeref:+Element
+<i>	_	0;"	m	class:+HTMLCollection	typeref:+Element
+<i>	_	0;"	m	class:+NamedNodeMap	typeref:+Element
+<i>	_	0;"	m	class:+DOMTokenList	typeref:string
+<i>	_	0;"	m	class:+FileList	typeref:+File
+abort	_	0;"	f	class:+FileReader	
+abort	_	0;"	f	class:+XMLHttpRequest	
+activeElement	_	0;"	m	class:+Document	typeref:+Element
+add	_	0;"	f	class:+DOMTokenList	
+addedNodes	_	0;"	m	class:+MutationRecord	typeref:NodeList
+addEventListener	_	0;"	f	class:+Node	
+addEventListener	_	0;"	f	class:+XMLHttpRequest	
+addEventListener	_	0;"	f	
+addRange	_	0;"	f	class:+Selection	
+adoptNode	_	0;"	f	class:+Document	typeref:+Element
+after	_	0;"	f	class:+Element	
+alert	_	0;"	f	
+alignmentBaseline	_	0;"	m	class:+Element.style	typeref:string
+altKey	_	0;"	m	class:+Event	typeref:bool
+anchorNode	_	0;"	m	class:+Selection	typeref:+Element
+anchorOffset	_	0;"	m	class:+Selection	typeref:number
+anchors	_	0;"	m	class:+Document	typeref:+HTMLCollection
+ANY_TYPE	_	0;"	m	class:+XPathResult	typeref:number
+ANY_UNORDERED_NODE_TYPE	_	0;"	m	class:+XPathResult	typeref:number
+append	_	0;"	f	class:+Element	
+append	_	0;"	f	class:+URLSearchParams	
+append	_	0;"	f	class:+FormData	
+append	_	0;"	f	class:+Headers	
+appendChild	_	0;"	f	class:+Node	typeref:+Element
+appName	_	0;"	m	class:navigator	typeref:string
+appVersion	_	0;"	m	class:navigator	typeref:string
+arc	_	0;"	f	class:CanvasRenderingContext2D	
+arcTo	_	0;"	f	class:CanvasRenderingContext2D	
+arrayBuffer	_	0;"	f	class:+Request	typeref:+Promise
+arrayBuffer	_	0;"	f	class:+Response	typeref:+Promise
+assert	_	0;"	f	class:console	
+assign	_	0;"	f	class:location	
+AT_TARGET	_	0;"	m	class:+Event	typeref:number
+atob	_	0;"	f	typeref:string
+attachedCallback	_	0;"	f	class:+Element	
+Attr	_	0;"	f	
+ATTRIBUTE_NODE	_	0;"	m	class:+Node	typeref:number
+attributeChangedCallback	_	0;"	f	class:+Element	
+attributeName	_	0;"	m	class:+MutationRecord	typeref:string
+attributeNamespace	_	0;"	m	class:+MutationRecord	typeref:string
+attributes	_	0;"	m	class:+Node	typeref:+NamedNodeMap
+availHeight	_	0;"	m	class:screen	typeref:number
+availLeft	_	0;"	m	class:screen	typeref:number
+availTop	_	0;"	m	class:screen	typeref:number
+availWidth	_	0;"	m	class:screen	typeref:number
+back	_	0;"	f	class:history	
+background	_	0;"	m	class:+Element.style	typeref:string
+backgroundAttachment	_	0;"	m	class:+Element.style	typeref:string
+backgroundClip	_	0;"	m	class:+Element.style	typeref:string
+backgroundColor	_	0;"	m	class:+Element.style	typeref:string
+backgroundImage	_	0;"	m	class:+Element.style	typeref:string
+backgroundOrigin	_	0;"	m	class:+Element.style	typeref:string
+backgroundPosition	_	0;"	m	class:+Element.style	typeref:string
+backgroundPositionX	_	0;"	m	class:+Element.style	typeref:string
+backgroundPositionY	_	0;"	m	class:+Element.style	typeref:string
+backgroundRepeat	_	0;"	m	class:+Element.style	typeref:string
+backgroundRepeatX	_	0;"	m	class:+Element.style	typeref:string
+backgroundRepeatY	_	0;"	m	class:+Element.style	typeref:string
+backgroundSize	_	0;"	m	class:+Element.style	typeref:string
+baselineShift	_	0;"	m	class:+Element.style	typeref:string
+baseURI	_	0;"	m	class:+Node	typeref:string
+before	_	0;"	f	class:+Element	
+BeforeLoadEvent	_	0;"	f	
+beginPath	_	0;"	f	class:CanvasRenderingContext2D	
+bezierCurveTo	_	0;"	f	class:CanvasRenderingContext2D	
+binaryType	_	0;"	m	class:+WebSocket	typeref:string
+Blob	_	0;"	f	
+blob	_	0;"	f	class:+Request	typeref:+Promise
+blob	_	0;"	f	class:+Response	typeref:+Promise
+blur	_	0;"	f	class:+Element	
+BLUR	_	0;"	m	class:+Event	typeref:number
+blur	_	0;"	f	
+body	_	0;"	m	class:+Document	typeref:+Element
+bodyUsed	_	0;"	m	class:+Request	typeref:bool
+bodyUsed	_	0;"	m	class:+Response	typeref:bool
+BOOL_TYPE	_	0;"	m	class:+XPathResult	typeref:number
+boolValue	_	0;"	m	class:+XPathResult	typeref:bool
+border	_	0;"	m	class:+Element.style	typeref:string
+borderBottom	_	0;"	m	class:+Element.style	typeref:string
+borderBottomColor	_	0;"	m	class:+Element.style	typeref:string
+borderBottomLeftRadius	_	0;"	m	class:+Element.style	typeref:string
+borderBottomRightRadius	_	0;"	m	class:+Element.style	typeref:string
+borderBottomStyle	_	0;"	m	class:+Element.style	typeref:string
+borderBottomWidth	_	0;"	m	class:+Element.style	typeref:string
+borderCollapse	_	0;"	m	class:+Element.style	typeref:string
+borderColor	_	0;"	m	class:+Element.style	typeref:string
+borderImage	_	0;"	m	class:+Element.style	typeref:string
+borderImageOutset	_	0;"	m	class:+Element.style	typeref:string
+borderImageRepeat	_	0;"	m	class:+Element.style	typeref:string
+borderImageSlice	_	0;"	m	class:+Element.style	typeref:string
+borderImageSource	_	0;"	m	class:+Element.style	typeref:string
+borderImageWidth	_	0;"	m	class:+Element.style	typeref:string
+borderLeft	_	0;"	m	class:+Element.style	typeref:string
+borderLeftColor	_	0;"	m	class:+Element.style	typeref:string
+borderLeftStyle	_	0;"	m	class:+Element.style	typeref:string
+borderLeftWidth	_	0;"	m	class:+Element.style	typeref:string
+borderRadius	_	0;"	m	class:+Element.style	typeref:string
+borderRight	_	0;"	m	class:+Element.style	typeref:string
+borderRightColor	_	0;"	m	class:+Element.style	typeref:string
+borderRightStyle	_	0;"	m	class:+Element.style	typeref:string
+borderRightWidth	_	0;"	m	class:+Element.style	typeref:string
+borderSpacing	_	0;"	m	class:+Element.style	typeref:string
+borderStyle	_	0;"	m	class:+Element.style	typeref:string
+borderTop	_	0;"	m	class:+Element.style	typeref:string
+borderTopColor	_	0;"	m	class:+Element.style	typeref:string
+borderTopLeftRadius	_	0;"	m	class:+Element.style	typeref:string
+borderTopRightRadius	_	0;"	m	class:+Element.style	typeref:string
+borderTopStyle	_	0;"	m	class:+Element.style	typeref:string
+borderTopWidth	_	0;"	m	class:+Element.style	typeref:string
+borderWidth	_	0;"	m	class:+Element.style	typeref:string
+bottom	_	0;"	m	class:+Element.style	typeref:string
+bottom	_	0;"	m	class:+ClientRect	typeref:number
+boxShadow	_	0;"	m	class:+Element.style	typeref:string
+boxSizing	_	0;"	m	class:+Element.style	typeref:string
+btoa	_	0;"	f	typeref:string
+BUBBLING_PHASE	_	0;"	m	class:+Event	typeref:number
+bufferedAmount	_	0;"	m	class:+WebSocket	typeref:number
+button	_	0;"	m	class:+Event	typeref:number
+cache	_	0;"	m	class:+Request	typeref:string
+cancelAnimationFrame	_	0;"	f	
+cancelBubble	_	0;"	m	class:+Event	typeref:bool
+canvas	_	0;"	m	class:CanvasRenderingContext2D	typeref:+Element
+CanvasRenderingContext2D	_	0;"	c	
+captionSide	_	0;"	m	class:+Element.style	typeref:string
+CAPTURING_PHASE	_	0;"	m	class:+Event	typeref:number
+CDATA_SECTION_NODE	_	0;"	m	class:+Node	typeref:number
+CHANGE	_	0;"	m	class:+Event	typeref:number
+characterSet	_	0;"	m	class:+Document	typeref:string
+charCode	_	0;"	m	class:+Event	typeref:number
+childElementCount	_	0;"	m	class:+Element	typeref:number
+childNodes	_	0;"	m	class:+Node	typeref:+NodeList
+children	_	0;"	m	class:+Element	typeref:+HTMLCollection
+classList	_	0;"	m	class:+Element	typeref:+DOMTokenList
+className	_	0;"	m	class:+Element	typeref:string
+clear	_	0;"	m	class:+Element.style	typeref:string
+clear	_	0;"	f	class:+Document	
+clear	_	0;"	f	class:Storage	
+clear	_	0;"	f	class:console	
+clearData	_	0;"	f	class:+DataTransfer	
+clearInterval	_	0;"	f	
+clearRect	_	0;"	f	class:CanvasRenderingContext2D	
+clearTimeout	_	0;"	f	
+CLICK	_	0;"	m	class:+Event	typeref:number
+clientHeight	_	0;"	m	class:+Element	typeref:number
+clientLeft	_	0;"	m	class:+Element	typeref:number
+ClientRect	_	0;"	f	
+clientTop	_	0;"	m	class:+Element	typeref:number
+clientWidth	_	0;"	m	class:+Element	typeref:number
+clientX	_	0;"	m	class:+Event	typeref:number
+clientY	_	0;"	m	class:+Event	typeref:number
+clip	_	0;"	m	class:+Element.style	typeref:string
+clip	_	0;"	f	class:CanvasRenderingContext2D	
+Clipboard	_	0;"	c	
+clipPath	_	0;"	m	class:+Element.style	typeref:string
+clipRule	_	0;"	m	class:+Element.style	typeref:string
+clone	_	0;"	f	class:+Request	
+clone	_	0;"	f	class:+Response	typeref:+Response
+cloneContents	_	0;"	f	class:+Range	typeref:+DocumentFragment
+cloneNode	_	0;"	f	class:+Node	typeref:+Element
+cloneRange	_	0;"	f	class:+Range	typeref:+Range
+close	_	0;"	f	class:+Document	
+close	_	0;"	f	class:+WebSocket	
+close	_	0;"	f	
+CLOSED	_	0;"	m	class:+WebSocket	typeref:number
+closed	_	0;"	m	typeref:bool
+closePath	_	0;"	f	class:CanvasRenderingContext2D	
+closest	_	0;"	f	class:+Element	
+CLOSING	_	0;"	m	class:+WebSocket	typeref:number
+collapse	_	0;"	f	class:+Range	
+collapse	_	0;"	f	class:+Selection	
+collapsed	_	0;"	m	class:+Range	typeref:bool
+collapseToEnd	_	0;"	f	class:+Selection	
+collapseToStart	_	0;"	f	class:+Selection	
+color	_	0;"	m	class:+Element.style	typeref:string
+colorDepth	_	0;"	m	class:screen	typeref:number
+colorInterpolation	_	0;"	m	class:+Element.style	typeref:string
+colorInterpolationFilters	_	0;"	m	class:+Element.style	typeref:string
+colorProfile	_	0;"	m	class:+Element.style	typeref:string
+colorRendering	_	0;"	m	class:+Element.style	typeref:string
+COMMENT_NODE	_	0;"	m	class:+Node	typeref:number
+commit	_	0;"	f	class:CanvasRenderingContext2D	
+commonAncestorContainer	_	0;"	m	class:+Range	typeref:+Element
+compareBoundaryPoints	_	0;"	f	class:+Range	typeref:number
+compareDocumentPosition	_	0;"	f	class:+Node	typeref:number
+compatMode	_	0;"	m	class:+Document	typeref:string
+confirm	_	0;"	f	typeref:bool
+CONNECTING	_	0;"	m	class:+WebSocket	typeref:number
+console	_	0;"	c	
+contains	_	0;"	f	class:+Node	typeref:bool
+contains	_	0;"	f	class:+DOMTokenList	typeref:bool
+containsNode	_	0;"	f	class:+Selection	typeref:bool
+content	_	0;"	m	class:+Element.style	typeref:string
+contentEditable	_	0;"	m	class:+Element	typeref:bool
+context	_	0;"	m	class:+Request	typeref:string
+cookie	_	0;"	m	class:+Document	typeref:string
+cookieEnabled	_	0;"	m	class:navigator	typeref:bool
+count	_	0;"	f	class:console	
+counterIncrement	_	0;"	m	class:+Element.style	typeref:string
+counterReset	_	0;"	m	class:+Element.style	typeref:string
+createAttribute	_	0;"	f	class:+Document	typeref:+Attr
+createAttributeNS	_	0;"	f	class:+Document	typeref:+Attr
+createCDATASection	_	0;"	f	class:+Document	typeref:+Element
+createComment	_	0;"	f	class:+Document	typeref:+Element
+createdCallback	_	0;"	f	class:+Element	
+createDocument	_	0;"	f	class:+Document.implementation	typeref:+Document
+createDocumentFragment	_	0;"	f	class:+Document	typeref:+DocumentFragment
+createDocumentType	_	0;"	f	class:+Document.implementation	typeref:+Element
+createElement	_	0;"	f	class:+Document	typeref:+Element
+createElementNS	_	0;"	f	class:+Document	typeref:+Element
+createEvent	_	0;"	f	class:+Document	typeref:+Event
+createExpression	_	0;"	f	class:+Document	
+createHTMLDocument	_	0;"	f	class:+Document.implementation	typeref:+Document
+createImageData	_	0;"	f	class:CanvasRenderingContext2D	
+createLinearGradient	_	0;"	f	class:CanvasRenderingContext2D	
+createNSResolver	_	0;"	f	class:+Document	
+createObjectURL	_	0;"	f	class:URL	typeref:string
+createPattern	_	0;"	f	class:CanvasRenderingContext2D	
+createProcessingInstruction	_	0;"	f	class:+Document	typeref:+Element
+createRange	_	0;"	f	class:+Document	typeref:+Range
+createTextNode	_	0;"	f	class:+Document	typeref:+Text
+createTreeWalker	_	0;"	f	class:+Document	
+credentials	_	0;"	m	class:+Request	typeref:string
+crypto	_	0;"	c	
+cssText	_	0;"	m	class:+Element.style	typeref:string
+ctrlKey	_	0;"	m	class:+Event	typeref:bool
+currentScript	_	0;"	m	class:+Document	typeref:+Element
+currentTransform	_	0;"	m	class:CanvasRenderingContext2D	typeref:?
+cursor	_	0;"	m	class:+Element.style	typeref:string
+CustomEvent	_	0;"	f	
+DataTransfer	_	0;"	c	
+dataTransfer	_	0;"	m	class:+Event	typeref:+DataTransfer
+DBLCLICK	_	0;"	m	class:+Event	typeref:number
+debug	_	0;"	m	class:console	typeref:console.log
+defaultView	_	0;"	c	class:+Document	
+delete	_	0;"	f	class:+URLSearchParams	
+delete	_	0;"	f	class:+FormData	
+delete	_	0;"	f	class:+Headers	
+deleteContents	_	0;"	f	class:+Range	
+deleteFromDocument	_	0;"	f	class:+Selection	
+designMode	_	0;"	m	class:+Document	typeref:string
+detach	_	0;"	f	class:+Range	
+detachedCallback	_	0;"	f	class:+Element	
+devicePixelRatio	_	0;"	m	typeref:number
+dir	_	0;"	m	class:+Document	typeref:string
+dir	_	0;"	f	class:console	
+direction	_	0;"	m	class:+Element.style	typeref:string
+direction	_	0;"	m	class:CanvasRenderingContext2D	typeref:string
+disconnect	_	0;"	f	class:+MutationObserver	
+dispatchEvent	_	0;"	f	class:+Node	typeref:bool
+dispatchEvent	_	0;"	f	class:+XMLHttpRequest	
+dispatchEvent	_	0;"	f	typeref:bool
+display	_	0;"	m	class:+Element.style	typeref:string
+doctype	_	0;"	m	class:+Document	typeref:+Element
+Document	_	0;"	f	
+document	_	0;"	m	typeref:+Document
+DOCUMENT_FRAGMENT_NODE	_	0;"	m	class:+Node	typeref:number
+DOCUMENT_NODE	_	0;"	m	class:+Node	typeref:number
+DOCUMENT_POSITION_CONTAINED_BY	_	0;"	m	class:+Node	typeref:number
+DOCUMENT_POSITION_CONTAINS	_	0;"	m	class:+Node	typeref:number
+DOCUMENT_POSITION_DISCONNECTED	_	0;"	m	class:+Node	typeref:number
+DOCUMENT_POSITION_FOLLOWING	_	0;"	m	class:+Node	typeref:number
+DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC	_	0;"	m	class:+Node	typeref:number
+DOCUMENT_POSITION_PRECEDING	_	0;"	m	class:+Node	typeref:number
+DOCUMENT_TYPE_NODE	_	0;"	m	class:+Node	typeref:number
+documentElement	_	0;"	m	class:+Document	typeref:+Element
+DocumentFragment	_	0;"	f	
+documentURI	_	0;"	m	class:+Document	typeref:string
+domain	_	0;"	m	class:+Document	typeref:string
+dominantBaseline	_	0;"	m	class:+Element.style	typeref:string
+DOMParser	_	0;"	f	
+DOMTokenList	_	0;"	f	
+DONE	_	0;"	m	class:+FileReader	typeref:number
+DONE	_	0;"	m	class:+XMLHttpRequest	typeref:number
+DRAGDROP	_	0;"	m	class:+Event	typeref:number
+drawImage	_	0;"	f	class:CanvasRenderingContext2D	
+dropEffect	_	0;"	m	class:+DataTransfer	typeref:string
+effectAllowed	_	0;"	m	class:+DataTransfer	typeref:string
+Element	_	0;"	f	
+ELEMENT_NODE	_	0;"	m	class:+Node	typeref:number
+elementFromPoint	_	0;"	f	class:+Document	typeref:+Element
+ellipse	_	0;"	f	class:CanvasRenderingContext2D	
+embeds	_	0;"	m	class:+Document	typeref:+HTMLCollection
+EMPTY	_	0;"	m	class:+FileReader	typeref:number
+emptyCells	_	0;"	m	class:+Element.style	typeref:string
+enableBackground	_	0;"	m	class:+Element.style	typeref:string
+END_TO_END	_	0;"	m	class:+Range	typeref:number
+END_TO_START	_	0;"	m	class:+Range	typeref:number
+endContainer	_	0;"	m	class:+Range	typeref:+Element
+endOffset	_	0;"	m	class:+Range	typeref:number
+ENTITY_NODE	_	0;"	m	class:+Node	typeref:number
+ENTITY_REFERENCE_NODE	_	0;"	m	class:+Node	typeref:number
+entries	_	0;"	f	class:+URLSearchParams	typeref:+iter
+entries	_	0;"	f	class:+FormData	typeref:+iter
+error	_	0;"	m	class:+FileReader	typeref:?
+error	_	0;"	f	class:console	
+error	_	0;"	f	class:+Response	typeref:+Response
+ErrorEvent	_	0;"	f	
+evaluate	_	0;"	f	class:+Document	typeref:+XPathResult
+Event	_	0;"	f	
+execCommand	_	0;"	f	class:+Document	
+extend	_	0;"	f	class:+Selection	
+extensions	_	0;"	m	class:+WebSocket	typeref:string
+extractContents	_	0;"	f	class:+Range	typeref:+DocumentFragment
+fetch	_	0;"	f	typeref:+Promise
+File	_	0;"	f	
+FileList	_	0;"	f	
+FileReader	_	0;"	f	
+files	_	0;"	m	class:+DataTransfer	typeref:+FileList
+fill	_	0;"	m	class:+Element.style	typeref:string
+fill	_	0;"	f	class:CanvasRenderingContext2D	
+fillOpacity	_	0;"	m	class:+Element.style	typeref:string
+fillRect	_	0;"	f	class:CanvasRenderingContext2D	
+fillRule	_	0;"	m	class:+Element.style	typeref:string
+fillRule	_	0;"	m	class:CanvasRenderingContext2D	typeref:string
+fillStyle	_	0;"	m	class:CanvasRenderingContext2D	typeref:string
+fillText	_	0;"	f	class:CanvasRenderingContext2D	
+filter	_	0;"	m	class:+Element.style	typeref:string
+FIRST_ORDERED_NODE_TYPE	_	0;"	m	class:+XPathResult	typeref:number
+firstChild	_	0;"	m	class:+Node	typeref:+Element
+firstElementChild	_	0;"	m	class:+Element	typeref:+Element
+float	_	0;"	m	class:+Element.style	typeref:string
+floodColor	_	0;"	m	class:+Element.style	typeref:string
+floodOpacity	_	0;"	m	class:+Element.style	typeref:string
+focus	_	0;"	f	class:+Element	
+FOCUS	_	0;"	m	class:+Event	typeref:number
+focus	_	0;"	f	
+focusNode	_	0;"	m	class:+Selection	typeref:+Element
+focusOffset	_	0;"	m	class:+Selection	typeref:number
+font	_	0;"	m	class:+Element.style	typeref:string
+font	_	0;"	m	class:CanvasRenderingContext2D	typeref:string
+fontFamily	_	0;"	m	class:+Element.style	typeref:string
+fontSize	_	0;"	m	class:+Element.style	typeref:string
+fontStretch	_	0;"	m	class:+Element.style	typeref:string
+fontStyle	_	0;"	m	class:+Element.style	typeref:string
+fontVariant	_	0;"	m	class:+Element.style	typeref:string
+fontWeight	_	0;"	m	class:+Element.style	typeref:string
+FormData	_	0;"	f	
+formData	_	0;"	f	class:+Request	typeref:+Promise
+formData	_	0;"	f	class:+Response	typeref:+Promise
+forms	_	0;"	m	class:+Document	typeref:+HTMLCollection
+forward	_	0;"	f	class:history	
+frameElement	_	0;"	m	typeref:+Element
+geolocation	_	0;"	m	class:navigator	typeref:+Geolocation
+get	_	0;"	f	class:+URLSearchParams	typeref:string
+get	_	0;"	f	class:+FormData	typeref:string
+get	_	0;"	f	class:+Headers	
+getAll	_	0;"	f	class:+URLSearchParams	typeref:+Array
+getAll	_	0;"	f	class:+FormData	typeref:+Array
+getAll	_	0;"	f	class:+Headers	
+getAllResponseHeaders	_	0;"	f	class:+XMLHttpRequest	typeref:string
+getAttribute	_	0;"	f	class:+Element	typeref:string
+getAttributeNode	_	0;"	f	class:+Element	typeref:+Attr
+getAttributeNodeNS	_	0;"	f	class:+Element	typeref:+Attr
+getAttributeNS	_	0;"	f	class:+Element	typeref:string
+getBoundingClientRect	_	0;"	f	class:+Element	typeref:+ClientRect
+getClientRects	_	0;"	f	class:+Element	typeref:+Array
+getComputedStyle	_	0;"	f	typeref:Element
+getContext	_	0;"	f	class:+Element	typeref:CanvasRenderingContext2D
+getData	_	0;"	f	class:+DataTransfer	typeref:string
+getElementById	_	0;"	f	class:+Document	typeref:+Element
+getElementsByClassName	_	0;"	f	class:+Element	typeref:+NodeList
+getElementsByClassName	_	0;"	m	class:+Document	typeref:Element.prototype.getElementsByClassName
+getElementsByName	_	0;"	f	class:+Document	typeref:+HTMLCollection
+getElementsByTagName	_	0;"	f	class:+Element	typeref:+NodeList
+getElementsByTagName	_	0;"	f	class:+Document	typeref:+NodeList
+getElementsByTagNameNS	_	0;"	f	class:+Element	typeref:+NodeList
+getElementsByTagNameNS	_	0;"	f	class:+Document	typeref:+NodeList
+getImageData	_	0;"	f	class:CanvasRenderingContext2D	
+getItem	_	0;"	f	class:Storage	typeref:string
+getLineDash	_	0;"	f	class:CanvasRenderingContext2D	typeref:+Array
+getNamedItem	_	0;"	f	class:+NamedNodeMap	typeref:+Element
+getNamedItemNS	_	0;"	f	class:+NamedNodeMap	typeref:+Element
+getRandomValues	_	0;"	f	class:crypto	
+getRangeAt	_	0;"	f	class:+Selection	typeref:+Range
+getResponseHeader	_	0;"	f	class:+XMLHttpRequest	typeref:string
+getSelection	_	0;"	f	class:+Document	typeref:+Selection
+getSelection	_	0;"	f	typeref:+Selection
+globalAlpha	_	0;"	m	class:CanvasRenderingContext2D	typeref:number
+globalCompositeOperation	_	0;"	m	class:CanvasRenderingContext2D	typeref:string
+glyphOrientationHorizontal	_	0;"	m	class:+Element.style	typeref:string
+glyphOrientationVertical	_	0;"	m	class:+Element.style	typeref:string
+go	_	0;"	f	class:history	
+group	_	0;"	f	class:console	
+groupCollapsed	_	0;"	f	class:console	
+groupEnd	_	0;"	f	class:console	
+has	_	0;"	f	class:+URLSearchParams	typeref:bool
+has	_	0;"	f	class:+FormData	typeref:bool
+has	_	0;"	f	class:+Headers	
+hasAttribute	_	0;"	f	class:+Element	typeref:bool
+hasAttributeNS	_	0;"	f	class:+Element	typeref:bool
+hasAttributes	_	0;"	f	class:+Node	typeref:bool
+hasChildNodes	_	0;"	f	class:+Node	typeref:bool
+hasFeature	_	0;"	f	class:+Document.implementation	typeref:bool
+hasFocus	_	0;"	f	class:+Document	typeref:bool
+hash	_	0;"	m	class:location	typeref:string
+hash	_	0;"	m	class:+URL	typeref:string
+HashChangeEvent	_	0;"	f	
+head	_	0;"	m	class:+Document	typeref:+Element
+Headers	_	0;"	f	
+headers	_	0;"	m	class:+Request	typeref:+Headers
+headers	_	0;"	m	class:+Response	typeref:+Headers
+HEADERS_RECEIVED	_	0;"	m	class:+XMLHttpRequest	typeref:number
+height	_	0;"	m	class:+Element.style	typeref:string
+height	_	0;"	m	class:+Element	typeref:number
+height	_	0;"	m	class:+Document	typeref:number
+height	_	0;"	m	class:screen	typeref:number
+height	_	0;"	m	class:CanvasRenderingContext2D	typeref:number
+history	_	0;"	c	
+host	_	0;"	m	class:location	typeref:string
+host	_	0;"	m	class:+URL	typeref:string
+hostname	_	0;"	m	class:location	typeref:string
+hostname	_	0;"	m	class:+URL	typeref:string
+href	_	0;"	m	class:location	typeref:string
+href	_	0;"	m	class:+URL	typeref:string
+HTMLAnchorElement	_	0;"	m	typeref:Element
+HTMLAreaElement	_	0;"	m	typeref:Element
+HTMLAudioElement	_	0;"	m	typeref:Element
+HTMLBaseElement	_	0;"	m	typeref:Element
+HTMLBodyElement	_	0;"	m	typeref:Element
+HTMLBRElement	_	0;"	m	typeref:Element
+HTMLButtonElement	_	0;"	m	typeref:Element
+HTMLCanvasElement	_	0;"	m	typeref:Element
+HTMLCollection	_	0;"	f	
+HTMLDataElement	_	0;"	m	typeref:Element
+HTMLDataListElement	_	0;"	m	typeref:Element
+HTMLDivElement	_	0;"	m	typeref:Element
+HTMLDListElement	_	0;"	m	typeref:Element
+HTMLDocument	_	0;"	m	typeref:Document
+HTMLElement	_	0;"	m	typeref:Element
+HTMLEmbedElement	_	0;"	m	typeref:Element
+HTMLFieldSetElement	_	0;"	m	typeref:Element
+HTMLFormControlsCollection	_	0;"	m	typeref:Element
+HTMLFormElement	_	0;"	m	typeref:Element
+HTMLHeadElement	_	0;"	m	typeref:Element
+HTMLHeadingElement	_	0;"	m	typeref:Element
+HTMLHRElement	_	0;"	m	typeref:Element
+HTMLHtmlElement	_	0;"	m	typeref:Element
+HTMLIFrameElement	_	0;"	m	typeref:Element
+HTMLImageElement	_	0;"	m	typeref:Element
+HTMLInputElement	_	0;"	m	typeref:Element
+HTMLKeygenElement	_	0;"	m	typeref:Element
+HTMLLabelElement	_	0;"	m	typeref:Element
+HTMLLegendElement	_	0;"	m	typeref:Element
+HTMLLIElement	_	0;"	m	typeref:Element
+HTMLLinkElement	_	0;"	m	typeref:Element
+HTMLMapElement	_	0;"	m	typeref:Element
+HTMLMediaElement	_	0;"	m	typeref:Element
+HTMLMetaElement	_	0;"	m	typeref:Element
+HTMLMeterElement	_	0;"	m	typeref:Element
+HTMLModElement	_	0;"	m	typeref:Element
+HTMLObjectElement	_	0;"	m	typeref:Element
+HTMLOListElement	_	0;"	m	typeref:Element
+HTMLOptGroupElement	_	0;"	m	typeref:Element
+HTMLOptionElement	_	0;"	m	typeref:Element
+HTMLOptionsCollection	_	0;"	m	typeref:Element
+HTMLOutputElement	_	0;"	m	typeref:Element
+HTMLParagraphElement	_	0;"	m	typeref:Element
+HTMLParamElement	_	0;"	m	typeref:Element
+HTMLPreElement	_	0;"	m	typeref:Element
+HTMLProgressElement	_	0;"	m	typeref:Element
+HTMLQuoteElement	_	0;"	m	typeref:Element
+HTMLScriptElement	_	0;"	m	typeref:Element
+HTMLSelectElement	_	0;"	m	typeref:Element
+HTMLSourceElement	_	0;"	m	typeref:Element
+HTMLSpanElement	_	0;"	m	typeref:Element
+HTMLStyleElement	_	0;"	m	typeref:Element
+HTMLTableCaptionElement	_	0;"	m	typeref:Element
+HTMLTableCellElement	_	0;"	m	typeref:Element
+HTMLTableColElement	_	0;"	m	typeref:Element
+HTMLTableDataCellElement	_	0;"	m	typeref:Element
+HTMLTableElement	_	0;"	m	typeref:Element
+HTMLTableHeaderCellElement	_	0;"	m	typeref:Element
+HTMLTableRowElement	_	0;"	m	typeref:Element
+HTMLTableSectionElement	_	0;"	m	typeref:Element
+HTMLTextAreaElement	_	0;"	m	typeref:Element
+HTMLTimeElement	_	0;"	m	typeref:Element
+HTMLTitleElement	_	0;"	m	typeref:Element
+HTMLTrackElement	_	0;"	m	typeref:Element
+HTMLUListElement	_	0;"	m	typeref:Element
+HTMLUnknownElement	_	0;"	m	typeref:Element
+HTMLVideoElement	_	0;"	m	typeref:Element
+Image	_	0;"	f	typeref:+HTMLImageElement
+imageRendering	_	0;"	m	class:+Element.style	typeref:string
+imageSmoothingEnabled	_	0;"	m	class:CanvasRenderingContext2D	typeref:bool
+implementation	_	0;"	c	class:+Document	
+importNode	_	0;"	f	class:+Document	typeref:+Element
+info	_	0;"	f	class:console	
+initEvent	_	0;"	f	class:+Event	
+innerHeight	_	0;"	m	typeref:number
+innerHTML	_	0;"	m	class:+Element	typeref:string
+innerText	_	0;"	m	class:+Node	typeref:string
+innerWidth	_	0;"	m	typeref:number
+inputEncoding	_	0;"	m	class:+Document	typeref:string
+insertAdjacentHTML	_	0;"	f	class:+Element	
+insertBefore	_	0;"	f	class:+Node	typeref:+Element
+insertNode	_	0;"	f	class:+Range	
+integrity	_	0;"	m	class:+Request	typeref:string
+invalidIteratorState	_	0;"	m	class:+XPathResult	typeref:bool
+isCollapsed	_	0;"	m	class:+Selection	typeref:bool
+isDefaultNamespace	_	0;"	f	class:+Node	typeref:bool
+isEqualNode	_	0;"	f	class:+Node	typeref:bool
+isId	_	0;"	m	class:+Attr	typeref:bool
+isSameNode	_	0;"	f	class:+Node	typeref:bool
+isSupported	_	0;"	f	class:+Node	typeref:bool
+item	_	0;"	f	class:+NodeList	typeref:+Element
+item	_	0;"	f	class:+HTMLCollection	typeref:+Element
+item	_	0;"	f	class:+NamedNodeMap	typeref:+Element
+item	_	0;"	f	class:+DOMTokenList	typeref:string
+item	_	0;"	f	class:+FileList	typeref:+File
+items	_	0;"	m	class:+DataTransfer	typeref:[?]
+iterateNext	_	0;"	f	class:+XPathResult	
+javaEnabled	_	0;"	f	class:navigator	typeref:bool
+json	_	0;"	f	class:+Request	typeref:+Promise
+json	_	0;"	f	class:+Response	typeref:+Promise
+kerning	_	0;"	m	class:+Element.style	typeref:string
+key	_	0;"	f	class:Storage	typeref:string
+KeyboardEvent	_	0;"	f	
+keyCode	_	0;"	m	class:+Event	typeref:number
+KEYDOWN	_	0;"	m	class:+Event	typeref:number
+KEYPRESS	_	0;"	m	class:+Event	typeref:number
+keys	_	0;"	f	class:+URLSearchParams	typeref:+iter
+keys	_	0;"	f	class:+FormData	typeref:+iter
+KEYUP	_	0;"	m	class:+Event	typeref:number
+language	_	0;"	m	class:navigator	typeref:string
+languages	_	0;"	m	class:navigator	typeref:[string]
+lastChild	_	0;"	m	class:+Node	typeref:+Element
+lastElementChild	_	0;"	m	class:+Element	typeref:+Element
+lastModified	_	0;"	m	class:+Document	typeref:string
+lastModified	_	0;"	m	class:+File	typeref:number
+left	_	0;"	m	class:+Element.style	typeref:string
+left	_	0;"	m	class:+ClientRect	typeref:number
+length	_	0;"	m	class:+NodeList	typeref:number
+length	_	0;"	m	class:+HTMLCollection	typeref:number
+length	_	0;"	m	class:+NamedNodeMap	typeref:number
+length	_	0;"	m	class:+DOMTokenList	typeref:number
+length	_	0;"	m	class:Storage	typeref:number
+length	_	0;"	m	class:+FileList	typeref:number
+length	_	0;"	m	class:history	typeref:number
+letterSpacing	_	0;"	m	class:+Element.style	typeref:string
+lightingColor	_	0;"	m	class:+Element.style	typeref:string
+lineCap	_	0;"	m	class:CanvasRenderingContext2D	typeref:string
+lineDashOffset	_	0;"	m	class:CanvasRenderingContext2D	typeref:number
+lineHeight	_	0;"	m	class:+Element.style	typeref:string
+lineJoin	_	0;"	m	class:CanvasRenderingContext2D	typeref:string
+lineTo	_	0;"	f	class:CanvasRenderingContext2D	
+lineWidth	_	0;"	m	class:CanvasRenderingContext2D	typeref:number
+links	_	0;"	m	class:+Document	typeref:+HTMLCollection
+listStyle	_	0;"	m	class:+Element.style	typeref:string
+listStyleImage	_	0;"	m	class:+Element.style	typeref:string
+listStylePosition	_	0;"	m	class:+Element.style	typeref:string
+listStyleType	_	0;"	m	class:+Element.style	typeref:string
+LOADING	_	0;"	m	class:+FileReader	typeref:number
+LOADING	_	0;"	m	class:+XMLHttpRequest	typeref:number
+localName	_	0;"	m	class:+Node	typeref:string
+localStorage	_	0;"	m	typeref:Storage
+location	_	0;"	c	
+location	_	0;"	m	class:+Document	typeref:location
+log	_	0;"	f	class:console	
+lookupNamespaceURI	_	0;"	f	class:+Node	typeref:string
+lookupPrefix	_	0;"	f	class:+Node	typeref:string
+margin	_	0;"	m	class:+Element.style	typeref:string
+marginBottom	_	0;"	m	class:+Element.style	typeref:string
+marginLeft	_	0;"	m	class:+Element.style	typeref:string
+marginRight	_	0;"	m	class:+Element.style	typeref:string
+marginTop	_	0;"	m	class:+Element.style	typeref:string
+marker	_	0;"	m	class:+Element.style	typeref:string
+markerEnd	_	0;"	m	class:+Element.style	typeref:string
+markerMid	_	0;"	m	class:+Element.style	typeref:string
+markerStart	_	0;"	m	class:+Element.style	typeref:string
+mask	_	0;"	m	class:+Element.style	typeref:string
+matches	_	0;"	f	class:+Element	typeref:bool
+maxHeight	_	0;"	m	class:+Element.style	typeref:string
+maxWidth	_	0;"	m	class:+Element.style	typeref:string
+measureText	_	0;"	f	class:CanvasRenderingContext2D	
+metaKey	_	0;"	m	class:+Event	typeref:bool
+method	_	0;"	m	class:+Request	typeref:string
+minHeight	_	0;"	m	class:+Element.style	typeref:string
+minWidth	_	0;"	m	class:+Element.style	typeref:string
+miterLimit	_	0;"	m	class:CanvasRenderingContext2D	typeref:number
+mode	_	0;"	m	class:+Request	typeref:string
+MOUSEDOWN	_	0;"	m	class:+Event	typeref:number
+MOUSEDRAG	_	0;"	m	class:+Event	typeref:number
+MouseEvent	_	0;"	f	
+MOUSEMOVE	_	0;"	m	class:+Event	typeref:number
+MOUSEOUT	_	0;"	m	class:+Event	typeref:number
+MOUSEOVER	_	0;"	m	class:+Event	typeref:number
+MOUSEUP	_	0;"	m	class:+Event	typeref:number
+moveTo	_	0;"	f	class:CanvasRenderingContext2D	
+MutationObserver	_	0;"	f	
+MutationRecord	_	0;"	c	
+name	_	0;"	m	class:+Attr	typeref:string
+name	_	0;"	m	class:+File	typeref:string
+name	_	0;"	m	typeref:string
+namedItem	_	0;"	f	class:+HTMLCollection	typeref:+Element
+NamedNodeMap	_	0;"	f	
+namespaceURI	_	0;"	m	class:+Node	typeref:string
+navigator	_	0;"	c	
+nextElementSibling	_	0;"	m	class:+Element	typeref:+Element
+nextSibling	_	0;"	m	class:+Node	typeref:+Element
+nextSibling	_	0;"	m	class:+MutationRecord	typeref:Node
+Node	_	0;"	f	
+NodeList	_	0;"	f	
+nodeName	_	0;"	m	class:+Node	typeref:string
+nodeType	_	0;"	m	class:+Node	typeref:number
+nodeValue	_	0;"	m	class:+Node	typeref:string
+NONE	_	0;"	m	class:+Event	typeref:number
+normalize	_	0;"	f	class:+Node	
+NOTATION_NODE	_	0;"	m	class:+Node	typeref:number
+NUMBER_TYPE	_	0;"	m	class:+XPathResult	typeref:number
+numberValue	_	0;"	m	class:+XPathResult	typeref:number
+observe	_	0;"	f	class:+MutationObserver	
+offsetHeight	_	0;"	m	class:+Element	typeref:number
+offsetLeft	_	0;"	m	class:+Element	typeref:number
+offsetTop	_	0;"	m	class:+Element	typeref:number
+offsetWidth	_	0;"	m	class:+Element	typeref:number
+ok	_	0;"	m	class:+Response	typeref:bool
+oldValue	_	0;"	m	class:+MutationRecord	typeref:string
+onabort	_	0;"	m	class:+FileReader	typeref:?
+onabort	_	0;"	f	class:+XMLHttpRequest	
+onabort	_	0;"	m	typeref:?
+onbeforeunload	_	0;"	m	class:+Element	typeref:?
+onbeforeunload	_	0;"	m	typeref:?
+onblur	_	0;"	m	class:+Element	typeref:?
+onblur	_	0;"	m	typeref:?
+onchange	_	0;"	m	class:+Element	typeref:?
+onchange	_	0;"	m	typeref:?
+onclick	_	0;"	m	class:+Element	typeref:?
+onclick	_	0;"	m	typeref:?
+onclose	_	0;"	m	class:+WebSocket	typeref:?
+oncontextmenu	_	0;"	m	class:+Element	typeref:?
+oncontextmenu	_	0;"	m	typeref:?
+oncopy	_	0;"	m	class:+Element	typeref:?
+oncut	_	0;"	m	class:+Element	typeref:?
+ondblclick	_	0;"	m	class:+Element	typeref:?
+ondblclick	_	0;"	m	typeref:?
+ondrag	_	0;"	m	class:+Element	typeref:?
+ondrag	_	0;"	m	typeref:?
+ondragend	_	0;"	m	class:+Element	typeref:?
+ondragend	_	0;"	m	typeref:?
+ondragenter	_	0;"	m	class:+Element	typeref:?
+ondragenter	_	0;"	m	typeref:?
+ondragleave	_	0;"	m	class:+Element	typeref:?
+ondragleave	_	0;"	m	typeref:?
+ondragover	_	0;"	m	class:+Element	typeref:?
+ondragover	_	0;"	m	typeref:?
+ondragstart	_	0;"	m	class:+Element	typeref:?
+ondragstart	_	0;"	m	typeref:?
+ondrop	_	0;"	m	typeref:?
+onerror	_	0;"	m	class:+WebSocket	typeref:?
+onerror	_	0;"	m	class:+Worker	typeref:?
+onerror	_	0;"	m	class:+FileReader	typeref:?
+onerror	_	0;"	f	class:+XMLHttpRequest	
+onerror	_	0;"	m	typeref:?
+onfocus	_	0;"	m	class:+Element	typeref:?
+onfocus	_	0;"	m	typeref:?
+onhashchange	_	0;"	m	typeref:?
+oninput	_	0;"	m	typeref:?
+onkeydown	_	0;"	m	class:+Element	typeref:?
+onkeydown	_	0;"	m	typeref:?
+onkeypress	_	0;"	m	class:+Element	typeref:?
+onkeypress	_	0;"	m	typeref:?
+onkeyup	_	0;"	m	class:+Element	typeref:?
+onkeyup	_	0;"	m	typeref:?
+onLine	_	0;"	m	class:navigator	typeref:bool
+onload	_	0;"	m	class:+FileReader	typeref:?
+onload	_	0;"	f	class:+XMLHttpRequest	
+onload	_	0;"	m	typeref:?
+onloadend	_	0;"	m	class:+FileReader	typeref:?
+onloadend	_	0;"	f	class:+XMLHttpRequest	
+onloadstart	_	0;"	m	class:+FileReader	typeref:?
+onloadstart	_	0;"	f	class:+XMLHttpRequest	
+onmessage	_	0;"	m	class:+WebSocket	typeref:?
+onmessage	_	0;"	m	class:+Worker	typeref:?
+onmessage	_	0;"	m	typeref:?
+onmousedown	_	0;"	m	class:+Element	typeref:?
+onmousedown	_	0;"	m	typeref:?
+onmousemove	_	0;"	m	class:+Element	typeref:?
+onmousemove	_	0;"	m	typeref:?
+onmouseout	_	0;"	m	class:+Element	typeref:?
+onmouseout	_	0;"	m	typeref:?
+onmouseover	_	0;"	m	class:+Element	typeref:?
+onmouseover	_	0;"	m	typeref:?
+onmouseup	_	0;"	m	class:+Element	typeref:?
+onmouseup	_	0;"	m	typeref:?
+onmousewheel	_	0;"	m	class:+Element	typeref:?
+onmousewheel	_	0;"	m	typeref:?
+onoffline	_	0;"	m	typeref:?
+ononline	_	0;"	m	typeref:?
+onopen	_	0;"	m	class:+WebSocket	typeref:?
+onpaste	_	0;"	m	class:+Element	typeref:?
+onpopstate	_	0;"	m	typeref:?
+onprogress	_	0;"	m	class:+FileReader	typeref:?
+onprogress	_	0;"	f	class:+XMLHttpRequest	
+onreadystatechange	_	0;"	f	class:+XMLHttpRequest	
+onresize	_	0;"	m	class:+Element	typeref:?
+onresize	_	0;"	m	typeref:?
+onscroll	_	0;"	m	class:+Element	typeref:?
+onscroll	_	0;"	m	typeref:?
+ontimeout	_	0;"	f	class:+XMLHttpRequest	
+onunload	_	0;"	m	typeref:?
+opacity	_	0;"	m	class:+Element.style	typeref:string
+open	_	0;"	f	class:+Document	
+OPEN	_	0;"	m	class:+WebSocket	typeref:number
+open	_	0;"	f	class:+XMLHttpRequest	
+open	_	0;"	f	
+OPENED	_	0;"	m	class:+XMLHttpRequest	typeref:number
+opener	_	0;"	m	typeref:<top>
+ORDERED_NODE_ITERATOR_TYPE	_	0;"	m	class:+XPathResult	typeref:number
+ORDERED_NODE_SNAPSHOT_TYPE	_	0;"	m	class:+XPathResult	typeref:number
+origin	_	0;"	m	class:location	typeref:string
+origin	_	0;"	m	class:+URL	typeref:string
+orphans	_	0;"	m	class:+Element.style	typeref:string
+oscpu	_	0;"	m	class:navigator	typeref:string
+outerHeight	_	0;"	m	typeref:number
+outerWidth	_	0;"	m	typeref:number
+outline	_	0;"	m	class:+Element.style	typeref:string
+outlineColor	_	0;"	m	class:+Element.style	typeref:string
+outlineOffset	_	0;"	m	class:+Element.style	typeref:string
+outlineStyle	_	0;"	m	class:+Element.style	typeref:string
+outlineWidth	_	0;"	m	class:+Element.style	typeref:string
+overflow	_	0;"	m	class:+Element.style	typeref:string
+overflowWrap	_	0;"	m	class:+Element.style	typeref:string
+overflowX	_	0;"	m	class:+Element.style	typeref:string
+overflowY	_	0;"	m	class:+Element.style	typeref:string
+overrideMimeType	_	0;"	f	class:+XMLHttpRequest	
+ownerDocument	_	0;"	m	class:+Node	typeref:+Document
+padding	_	0;"	m	class:+Element.style	typeref:string
+paddingBottom	_	0;"	m	class:+Element.style	typeref:string
+paddingLeft	_	0;"	m	class:+Element.style	typeref:string
+paddingRight	_	0;"	m	class:+Element.style	typeref:string
+paddingTop	_	0;"	m	class:+Element.style	typeref:string
+page	_	0;"	m	class:+Element.style	typeref:string
+pageBreakAfter	_	0;"	m	class:+Element.style	typeref:string
+pageBreakBefore	_	0;"	m	class:+Element.style	typeref:string
+pageBreakInside	_	0;"	m	class:+Element.style	typeref:string
+pageX	_	0;"	m	class:+Event	typeref:number
+pageXOffset	_	0;"	m	typeref:number
+pageY	_	0;"	m	class:+Event	typeref:number
+pageYOffset	_	0;"	m	typeref:number
+parent	_	0;"	m	typeref:<top>
+parentElement	_	0;"	m	class:+Node	typeref:+Element
+parentNode	_	0;"	m	class:+Node	typeref:+Element
+parseFromString	_	0;"	f	class:+DOMParser	typeref:+Document
+password	_	0;"	m	class:+URL	typeref:string
+pathname	_	0;"	m	class:location	typeref:string
+pathname	_	0;"	m	class:+URL	typeref:string
+permissions	_	0;"	m	class:navigator	typeref:Permissions
+pixelDepth	_	0;"	m	class:screen	typeref:number
+platform	_	0;"	m	class:navigator	typeref:string
+plugins	_	0;"	m	class:+Document	typeref:+HTMLCollection
+plugins	_	0;"	m	class:navigator	typeref:[?]
+pointerEvents	_	0;"	m	class:+Element.style	typeref:string
+port	_	0;"	m	class:location	typeref:string
+port	_	0;"	m	class:+URL	typeref:string
+position	_	0;"	m	class:+Element.style	typeref:string
+postMessage	_	0;"	f	class:+Worker	
+postMessage	_	0;"	f	
+prefix	_	0;"	m	class:+Node	typeref:string
+prepend	_	0;"	f	class:+Element	
+preventDefault	_	0;"	f	class:+Event	
+previousElementSibling	_	0;"	m	class:+Element	typeref:+Element
+previousSibling	_	0;"	m	class:+Node	typeref:+Element
+previousSibling	_	0;"	m	class:+MutationRecord	typeref:Node
+PROCESSING_INSTRUCTION_NODE	_	0;"	m	class:+Node	typeref:number
+prompt	_	0;"	f	typeref:string
+protocol	_	0;"	m	class:location	typeref:string
+protocol	_	0;"	m	class:+WebSocket	typeref:string
+protocol	_	0;"	m	class:+URL	typeref:string
+pushState	_	0;"	f	class:history	
+putImageData	_	0;"	f	class:CanvasRenderingContext2D	
+quadraticCurveTo	_	0;"	f	class:CanvasRenderingContext2D	
+queryCommandEnabled	_	0;"	f	class:+Document	typeref:bool
+queryCommandIndeterm	_	0;"	f	class:+Document	typeref:bool
+queryCommandState	_	0;"	f	class:+Document	typeref:bool
+queryCommandSupported	_	0;"	f	class:+Document	typeref:bool
+queryCommandValue	_	0;"	f	class:+Document	typeref:string
+querySelector	_	0;"	f	class:+Element	typeref:+Element
+querySelector	_	0;"	m	class:+Document	typeref:Element.prototype.querySelector
+querySelectorAll	_	0;"	f	class:+Element	typeref:+NodeList
+querySelectorAll	_	0;"	m	class:+Document	typeref:Element.prototype.querySelectorAll
+quotes	_	0;"	m	class:+Element.style	typeref:string
+Range	_	0;"	f	
+rangeCount	_	0;"	m	class:+Selection	typeref:number
+read	_	0;"	f	class:Clipboard	typeref:+Promise
+readAsArrayBuffer	_	0;"	f	class:+FileReader	
+readAsBinaryString	_	0;"	f	class:+FileReader	
+readAsDataURL	_	0;"	f	class:+FileReader	
+readAsText	_	0;"	f	class:+FileReader	
+readText	_	0;"	f	class:Clipboard	typeref:+Promise
+readyState	_	0;"	m	class:+Document	typeref:string
+readyState	_	0;"	m	class:+FileReader	typeref:number
+readyState	_	0;"	m	class:+XMLHttpRequest	typeref:number
+rect	_	0;"	f	class:CanvasRenderingContext2D	
+redirect	_	0;"	m	class:+Request	typeref:string
+redirect	_	0;"	f	class:+Response	typeref:+Response
+referrer	_	0;"	m	class:+Document	typeref:string
+referrer	_	0;"	m	class:+Request	typeref:string
+referrerPolicy	_	0;"	m	class:+Request	typeref:string
+registerElement	_	0;"	f	class:+Document	
+relatedTarget	_	0;"	m	class:+Event	typeref:+Element
+reload	_	0;"	f	class:location	
+remove	_	0;"	f	class:+DOMTokenList	
+removeAllRanges	_	0;"	f	class:+Selection	
+removeAttribute	_	0;"	f	class:+Element	
+removeAttributeNode	_	0;"	f	class:+Element	typeref:+Attr
+removeAttributeNS	_	0;"	f	class:+Element	
+removeChild	_	0;"	f	class:+Node	typeref:+Element
+removedNodes	_	0;"	m	class:+MutationRecord	typeref:NodeList
+removeEventListener	_	0;"	f	class:+Node	
+removeEventListener	_	0;"	f	class:+XMLHttpRequest	
+removeEventListener	_	0;"	f	
+removeItem	_	0;"	f	class:Storage	
+removeNamedItem	_	0;"	f	class:+NamedNodeMap	typeref:+Element
+removeNamedItemNS	_	0;"	f	class:+NamedNodeMap	typeref:+Element
+removeRange	_	0;"	f	class:+Selection	
+replace	_	0;"	f	class:location	
+replaceChild	_	0;"	f	class:+Node	typeref:+Element
+replaceState	_	0;"	f	class:history	
+Request	_	0;"	f	
+requestAnimationFrame	_	0;"	f	typeref:number
+resetClip	_	0;"	f	class:CanvasRenderingContext2D	
+resetTransform	_	0;"	f	class:CanvasRenderingContext2D	
+resize	_	0;"	m	class:+Element.style	typeref:string
+response	_	0;"	m	class:+XMLHttpRequest	typeref:+Document
+Response	_	0;"	f	
+responseText	_	0;"	m	class:+XMLHttpRequest	typeref:string
+responseType	_	0;"	m	class:+XMLHttpRequest	typeref:string
+responseXML	_	0;"	m	class:+XMLHttpRequest	typeref:+Document
+restore	_	0;"	f	class:CanvasRenderingContext2D	
+result	_	0;"	m	class:+FileReader	typeref:?
+resultType	_	0;"	m	class:+XPathResult	typeref:number
+returnValue	_	0;"	m	class:+Event	typeref:bool
+revokeObjectURL	_	0;"	f	class:URL	
+right	_	0;"	m	class:+Element.style	typeref:string
+right	_	0;"	m	class:+ClientRect	typeref:number
+rotate	_	0;"	f	class:CanvasRenderingContext2D	
+save	_	0;"	f	class:CanvasRenderingContext2D	
+scale	_	0;"	f	class:CanvasRenderingContext2D	
+screen	_	0;"	c	
+screenLeft	_	0;"	m	typeref:number
+screenTop	_	0;"	m	typeref:number
+screenX	_	0;"	m	typeref:number
+screenY	_	0;"	m	typeref:number
+scripts	_	0;"	m	class:+Document	typeref:+HTMLCollection
+scroll	_	0;"	f	
+scrollBy	_	0;"	f	
+scrollByLines	_	0;"	f	class:+Element	
+scrollByPages	_	0;"	f	class:+Element	
+scrollHeight	_	0;"	m	class:+Element	typeref:number
+scrollIntoView	_	0;"	f	class:+Element	
+scrollLeft	_	0;"	m	class:+Element	typeref:number
+scrollTo	_	0;"	f	
+scrollTop	_	0;"	m	class:+Element	typeref:number
+scrollWidth	_	0;"	m	class:+Element	typeref:number
+scrollX	_	0;"	m	typeref:number
+scrollY	_	0;"	m	typeref:number
+search	_	0;"	m	class:location	typeref:string
+search	_	0;"	m	class:+URL	typeref:string
+searchParams	_	0;"	m	class:+URL	typeref:+URLSearchParams
+SELECT	_	0;"	m	class:+Event	typeref:number
+selectAllChildren	_	0;"	f	class:+Selection	
+Selection	_	0;"	f	
+selectNode	_	0;"	f	class:+Range	
+selectNodeContents	_	0;"	f	class:+Range	
+self	_	0;"	m	typeref:<top>
+send	_	0;"	f	class:+WebSocket	
+send	_	0;"	f	class:+XMLHttpRequest	
+sendBeacon	_	0;"	f	class:navigator	
+sessionStorage	_	0;"	m	typeref:Storage
+set	_	0;"	f	class:+URLSearchParams	
+set	_	0;"	f	class:+FormData	
+set	_	0;"	f	class:+Headers	
+setAttribute	_	0;"	f	class:+Element	
+setAttributeNode	_	0;"	f	class:+Element	typeref:+Attr
+setAttributeNodeNS	_	0;"	f	class:+Element	typeref:+Attr
+setAttributeNS	_	0;"	f	class:+Element	
+setData	_	0;"	f	class:+DataTransfer	
+setDragImage	_	0;"	f	class:+DataTransfer	
+setEnd	_	0;"	f	class:+Range	
+setEndAfter	_	0;"	f	class:+Range	
+setEndBefore	_	0;"	f	class:+Range	
+setInterval	_	0;"	f	typeref:number
+setItem	_	0;"	f	class:Storage	
+setLineDash	_	0;"	f	class:CanvasRenderingContext2D	
+setNamedItem	_	0;"	f	class:+NamedNodeMap	typeref:+Element
+setNamedItemNS	_	0;"	f	class:+NamedNodeMap	typeref:+Element
+setRequestHeader	_	0;"	f	class:+XMLHttpRequest	
+setStart	_	0;"	f	class:+Range	
+setStartAfter	_	0;"	f	class:+Range	
+setStartBefore	_	0;"	f	class:+Range	
+setTimeout	_	0;"	f	typeref:number
+setTransform	_	0;"	f	class:CanvasRenderingContext2D	
+shadowBlur	_	0;"	m	class:CanvasRenderingContext2D	typeref:number
+shadowColor	_	0;"	m	class:CanvasRenderingContext2D	typeref:string
+shadowOffsetX	_	0;"	m	class:CanvasRenderingContext2D	typeref:number
+shadowOffsetY	_	0;"	m	class:CanvasRenderingContext2D	typeref:number
+shapeRendering	_	0;"	m	class:+Element.style	typeref:string
+shiftKey	_	0;"	m	class:+Event	typeref:bool
+singleNodeValue	_	0;"	m	class:+XPathResult	typeref:+Element
+size	_	0;"	m	class:+Element.style	typeref:string
+size	_	0;"	m	class:+File	typeref:number
+size	_	0;"	m	class:+Blob	typeref:number
+slice	_	0;"	f	class:+Blob	typeref:+Blob
+snapshotItem	_	0;"	f	class:+XPathResult	
+snapshotLength	_	0;"	m	class:+XPathResult	typeref:number
+sort	_	0;"	f	class:+URLSearchParams	
+speak	_	0;"	m	class:+Element.style	typeref:string
+splitText	_	0;"	f	class:+Text	typeref:+Text
+src	_	0;"	m	class:+Element.style	typeref:string
+START_TO_END	_	0;"	m	class:+Range	typeref:number
+START_TO_START	_	0;"	m	class:+Range	typeref:number
+startContainer	_	0;"	m	class:+Range	typeref:+Element
+startOffset	_	0;"	m	class:+Range	typeref:number
+state	_	0;"	m	class:history	typeref:?
+status	_	0;"	m	class:+XMLHttpRequest	typeref:number
+status	_	0;"	m	class:+Response	typeref:number
+statusText	_	0;"	m	class:+XMLHttpRequest	typeref:string
+statusText	_	0;"	m	class:+Response	typeref:string
+stopColor	_	0;"	m	class:+Element.style	typeref:string
+stopImmediatePropagation	_	0;"	f	class:+Event	
+stopOpacity	_	0;"	m	class:+Element.style	typeref:string
+stopPropagation	_	0;"	f	class:+Event	
+Storage	_	0;"	c	
+STRING_TYPE	_	0;"	m	class:+XPathResult	typeref:number
+stringValue	_	0;"	m	class:+XPathResult	typeref:string
+stroke	_	0;"	m	class:+Element.style	typeref:string
+stroke	_	0;"	f	class:CanvasRenderingContext2D	
+strokeDasharray	_	0;"	m	class:+Element.style	typeref:string
+strokeDashoffset	_	0;"	m	class:+Element.style	typeref:string
+strokeLinecap	_	0;"	m	class:+Element.style	typeref:string
+strokeLinejoin	_	0;"	m	class:+Element.style	typeref:string
+strokeMiterlimit	_	0;"	m	class:+Element.style	typeref:string
+strokeOpacity	_	0;"	m	class:+Element.style	typeref:string
+strokeRect	_	0;"	f	class:CanvasRenderingContext2D	
+strokeStyle	_	0;"	m	class:CanvasRenderingContext2D	typeref:string
+strokeText	_	0;"	f	class:CanvasRenderingContext2D	
+strokeWidth	_	0;"	m	class:+Element.style	typeref:string
+style	_	0;"	c	class:+Element	
+styleSheets	_	0;"	m	class:+Document	typeref:+HTMLCollection
+supportsContext	_	0;"	f	class:+Element	typeref:bool
+surroundContents	_	0;"	f	class:+Range	
+tabIndex	_	0;"	m	class:+Element	typeref:number
+table	_	0;"	f	class:console	
+tableLayout	_	0;"	m	class:+Element.style	typeref:string
+tabSize	_	0;"	m	class:+Element.style	typeref:string
+tagName	_	0;"	m	class:+Node	typeref:string
+takeRecords	_	0;"	f	class:+MutationObserver	typeref:+Array
+target	_	0;"	m	class:+Event	typeref:+Element
+target	_	0;"	m	class:+MutationRecord	typeref:Node
+terminate	_	0;"	f	class:+Worker	
+Text	_	0;"	f	
+text	_	0;"	f	class:+Request	typeref:+Promise
+text	_	0;"	f	class:+Response	typeref:+Promise
+TEXT_NODE	_	0;"	m	class:+Node	typeref:number
+textAlign	_	0;"	m	class:+Element.style	typeref:string
+textAlign	_	0;"	m	class:CanvasRenderingContext2D	typeref:string
+textAnchor	_	0;"	m	class:+Element.style	typeref:string
+textBaseline	_	0;"	m	class:CanvasRenderingContext2D	typeref:string
+textContent	_	0;"	m	class:+Node	typeref:string
+textDecoration	_	0;"	m	class:+Element.style	typeref:string
+textIndent	_	0;"	m	class:+Element.style	typeref:string
+textLineThrough	_	0;"	m	class:+Element.style	typeref:string
+textLineThroughColor	_	0;"	m	class:+Element.style	typeref:string
+textLineThroughMode	_	0;"	m	class:+Element.style	typeref:string
+textLineThroughStyle	_	0;"	m	class:+Element.style	typeref:string
+textLineThroughWidth	_	0;"	m	class:+Element.style	typeref:string
+textOverflow	_	0;"	m	class:+Element.style	typeref:string
+textOverline	_	0;"	m	class:+Element.style	typeref:string
+textOverlineColor	_	0;"	m	class:+Element.style	typeref:string
+textOverlineMode	_	0;"	m	class:+Element.style	typeref:string
+textOverlineStyle	_	0;"	m	class:+Element.style	typeref:string
+textOverlineWidth	_	0;"	m	class:+Element.style	typeref:string
+textRendering	_	0;"	m	class:+Element.style	typeref:string
+textShadow	_	0;"	m	class:+Element.style	typeref:string
+textTransform	_	0;"	m	class:+Element.style	typeref:string
+textUnderline	_	0;"	m	class:+Element.style	typeref:string
+textUnderlineColor	_	0;"	m	class:+Element.style	typeref:string
+textUnderlineMode	_	0;"	m	class:+Element.style	typeref:string
+textUnderlineStyle	_	0;"	m	class:+Element.style	typeref:string
+textUnderlineWidth	_	0;"	m	class:+Element.style	typeref:string
+time	_	0;"	f	class:console	
+timeEnd	_	0;"	f	class:console	
+timeout	_	0;"	m	class:+XMLHttpRequest	typeref:number
+title	_	0;"	m	class:+Element	typeref:string
+title	_	0;"	m	class:+Document	typeref:string
+toggle	_	0;"	f	class:+DOMTokenList	typeref:bool
+top	_	0;"	m	class:+Element.style	typeref:string
+top	_	0;"	m	class:+ClientRect	typeref:number
+top	_	0;"	m	typeref:<top>
+toString	_	0;"	f	class:+URLSearchParams	typeref:string
+TouchEvent	_	0;"	f	
+trace	_	0;"	f	class:console	
+transform	_	0;"	f	class:CanvasRenderingContext2D	
+translate	_	0;"	f	class:CanvasRenderingContext2D	
+type	_	0;"	m	class:+Event	typeref:string
+type	_	0;"	m	class:+File	typeref:string
+type	_	0;"	m	class:+Blob	typeref:string
+type	_	0;"	m	class:+MutationRecord	typeref:string
+type	_	0;"	m	class:+Response	typeref:string
+types	_	0;"	m	class:+DataTransfer	typeref:[string]
+unicodeBidi	_	0;"	m	class:+Element.style	typeref:string
+unicodeRange	_	0;"	m	class:+Element.style	typeref:string
+UNORDERED_NODE_ITERATOR_TYPE	_	0;"	m	class:+XPathResult	typeref:number
+UNORDERED_NODE_SNAPSHOT_TYPE	_	0;"	m	class:+XPathResult	typeref:number
+UNSENT	_	0;"	m	class:+XMLHttpRequest	typeref:number
+URL	_	0;"	m	class:+Document	typeref:string
+url	_	0;"	m	class:+WebSocket	typeref:string
+URL	_	0;"	f	
+url	_	0;"	m	class:+Request	typeref:string
+url	_	0;"	m	class:+Response	typeref:string
+URLSearchParams	_	0;"	f	
+userAgent	_	0;"	m	class:navigator	typeref:string
+username	_	0;"	m	class:+URL	typeref:string
+value	_	0;"	m	class:+Attr	typeref:string
+values	_	0;"	f	class:+URLSearchParams	typeref:+iter
+values	_	0;"	f	class:+FormData	typeref:+iter
+vectorEffect	_	0;"	m	class:+Element.style	typeref:string
+vendor	_	0;"	m	class:navigator	typeref:string
+verticalAlign	_	0;"	m	class:+Element.style	typeref:string
+vibrate	_	0;"	f	class:navigator	
+visibility	_	0;"	m	class:+Element.style	typeref:string
+warn	_	0;"	f	class:console	
+WebSocket	_	0;"	f	
+WheelEvent	_	0;"	f	
+which	_	0;"	m	class:+Event	typeref:number
+whiteSpace	_	0;"	m	class:+Element.style	typeref:string
+wholeText	_	0;"	m	class:+Text	typeref:string
+width	_	0;"	m	class:+Element.style	typeref:string
+width	_	0;"	m	class:+Element	typeref:number
+width	_	0;"	m	class:+Document	typeref:number
+width	_	0;"	m	class:screen	typeref:number
+width	_	0;"	m	class:CanvasRenderingContext2D	typeref:number
+window	_	0;"	m	typeref:<top>
+wordBreak	_	0;"	m	class:+Element.style	typeref:string
+wordSpacing	_	0;"	m	class:+Element.style	typeref:string
+wordWrap	_	0;"	m	class:+Element.style	typeref:string
+Worker	_	0;"	f	
+write	_	0;"	f	class:+Document	
+write	_	0;"	f	class:Clipboard	typeref:+Promise
+writeln	_	0;"	f	class:+Document	
+writeText	_	0;"	f	class:Clipboard	typeref:+Promise
+writingMode	_	0;"	m	class:+Element.style	typeref:string
+XMLDocument	_	0;"	f	
+xmlEncoding	_	0;"	m	class:+Document	typeref:string
+XMLHttpRequest	_	0;"	f	
+xmlStandalone	_	0;"	m	class:+Document	typeref:bool
+xmlVersion	_	0;"	m	class:+Document	typeref:string
+XPathResult	_	0;"	f	
+zIndex	_	0;"	m	class:+Element.style	typeref:string
+zoom	_	0;"	m	class:+Element.style	typeref:string

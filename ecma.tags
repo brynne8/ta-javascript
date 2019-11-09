@@ -1,0 +1,349 @@
+:Symbol.iterator	_	0;"	f	class:+Array	typeref:+iter
+:Symbol.iterator	_	0;"	f	class:+String	typeref:+iter
+:Symbol.iterator	_	0;"	f	class:+Map	typeref:+iter
+:Symbol.iterator	_	0;"	f	class:+Set	typeref:+iter
+<i>	_	0;"	m	class:+String	typeref:string
+abs	_	0;"	f	class:Math	typeref:number
+acos	_	0;"	f	class:Math	typeref:number
+acosh	_	0;"	f	class:Math	typeref:number
+add	_	0;"	f	class:+Set	
+add	_	0;"	f	class:+WeakSet	
+all	_	0;"	f	class:Promise	typeref:+Promise
+apply	_	0;"	f	class:+Function	
+apply	_	0;"	f	class:Reflect	
+Array	_	0;"	f	
+ArrayBuffer	_	0;"	f	
+asin	_	0;"	f	class:Math	typeref:number
+asinh	_	0;"	f	class:Math	typeref:number
+assign	_	0;"	f	class:Object	
+asyncIterator	_	0;"	m	class:Symbol	typeref::Symbol.asyncIterator
+atan	_	0;"	f	class:Math	typeref:number
+atan2	_	0;"	f	class:Math	typeref:number
+atanh	_	0;"	f	class:Math	typeref:number
+bind	_	0;"	f	class:+Function	
+Boolean	_	0;"	f	typeref:bool
+buffer	_	0;"	m	class:+DataView	typeref:+ArrayBuffer
+byteLength	_	0;"	m	class:+ArrayBuffer	typeref:number
+byteLength	_	0;"	m	class:+DataView	typeref:number
+byteOffset	_	0;"	m	class:+DataView	typeref:number
+call	_	0;"	f	class:+Function	
+cbrt	_	0;"	f	class:Math	typeref:number
+ceil	_	0;"	f	class:Math	typeref:number
+charAt	_	0;"	f	class:+String	typeref:string
+charCodeAt	_	0;"	f	class:+String	typeref:number
+clear	_	0;"	f	class:+Map	
+clear	_	0;"	f	class:+Set	
+clz32	_	0;"	f	class:Math	typeref:number
+codePointAt	_	0;"	f	class:+String	typeref:number
+concat	_	0;"	f	class:+Array	
+concat	_	0;"	f	class:+String	typeref:string
+construct	_	0;"	f	class:Reflect	
+copyWithin	_	0;"	f	class:+Array	
+cos	_	0;"	f	class:Math	typeref:number
+cosh	_	0;"	f	class:Math	typeref:number
+create	_	0;"	f	class:Object	
+DataView	_	0;"	f	
+Date	_	0;"	f	
+decodeURI	_	0;"	f	typeref:string
+decodeURIComponent	_	0;"	f	typeref:string
+defineProperties	_	0;"	f	class:Object	
+defineProperty	_	0;"	f	class:Object	
+defineProperty	_	0;"	f	class:Reflect	typeref:bool
+delete	_	0;"	f	class:+Map	
+delete	_	0;"	f	class:+Set	typeref:bool
+delete	_	0;"	f	class:+WeakMap	typeref:bool
+delete	_	0;"	f	class:+WeakSet	typeref:bool
+deleteProperty	_	0;"	f	class:Reflect	typeref:bool
+E	_	0;"	m	class:Math	typeref:number
+encodeURI	_	0;"	f	typeref:string
+encodeURIComponent	_	0;"	f	typeref:string
+endsWith	_	0;"	f	class:+String	typeref:bool
+entries	_	0;"	f	class:+Array	typeref:+iter
+entries	_	0;"	f	class:+Map	typeref:+iter
+entries	_	0;"	f	class:+Set	typeref:+iter
+enumerate	_	0;"	f	class:Reflect	typeref:+iter
+EPSILON	_	0;"	m	class:Number	typeref:number
+Error	_	0;"	f	
+eval	_	0;"	f	
+EvalError	_	0;"	f	
+every	_	0;"	f	class:+Array	typeref:bool
+exec	_	0;"	f	class:+RegExp	typeref:+Array
+exp	_	0;"	f	class:Math	typeref:number
+expm1	_	0;"	f	class:Math	typeref:number
+fill	_	0;"	f	class:+Array	
+filter	_	0;"	f	class:+Array	typeref:bool
+find	_	0;"	f	class:+Array	typeref:bool
+findIndex	_	0;"	f	class:+Array	typeref:number
+flags	_	0;"	m	class:+RegExp	typeref:string
+Float32Array	_	0;"	m	typeref:TypedArray
+Float64Array	_	0;"	m	typeref:TypedArray
+floor	_	0;"	f	class:Math	typeref:number
+for	_	0;"	f	class:Symbol	
+forEach	_	0;"	f	class:+Array	
+forEach	_	0;"	f	class:+Map	
+forEach	_	0;"	f	class:+Set	
+freeze	_	0;"	f	class:Object	
+from	_	0;"	f	class:Array	typeref:+Array
+fromCharCode	_	0;"	f	class:String	typeref:string
+fromCodePoint	_	0;"	f	class:String	typeref:string
+fround	_	0;"	f	class:Math	typeref:number
+Function	_	0;"	f	typeref:fn
+get	_	0;"	f	class:+Map	
+get	_	0;"	f	class:Reflect	
+get	_	0;"	f	class:+WeakMap	
+getDate	_	0;"	f	class:+Date	typeref:number
+getDay	_	0;"	f	class:+Date	typeref:number
+getFloat32	_	0;"	f	class:+DataView	typeref:number
+getFloat64	_	0;"	f	class:+DataView	typeref:number
+getFullYear	_	0;"	f	class:+Date	typeref:number
+getHours	_	0;"	f	class:+Date	typeref:number
+getInt16	_	0;"	f	class:+DataView	typeref:number
+getInt32	_	0;"	f	class:+DataView	typeref:number
+getInt8	_	0;"	f	class:+DataView	typeref:number
+getMilliseconds	_	0;"	f	class:+Date	typeref:number
+getMinutes	_	0;"	f	class:+Date	typeref:number
+getMonth	_	0;"	f	class:+Date	typeref:number
+getOwnPropertyDescriptor	_	0;"	f	class:Object	typeref:propertyDescriptor
+getOwnPropertyDescriptor	_	0;"	f	class:Reflect	
+getOwnPropertyNames	_	0;"	f	class:Object	typeref:+Array
+getOwnPropertySymbols	_	0;"	f	class:Object	
+getPrototypeOf	_	0;"	f	class:Object	
+getPrototypeOf	_	0;"	f	class:Reflect	
+getSeconds	_	0;"	f	class:+Date	typeref:number
+getTime	_	0;"	f	class:+Date	typeref:number
+getTimezoneOffset	_	0;"	f	class:+Date	typeref:number
+getUint16	_	0;"	f	class:+DataView	typeref:number
+getUint32	_	0;"	f	class:+DataView	typeref:number
+getUint8	_	0;"	f	class:+DataView	typeref:number
+getUTCDate	_	0;"	f	class:+Date	typeref:number
+getUTCDay	_	0;"	f	class:+Date	typeref:number
+getUTCFullYear	_	0;"	f	class:+Date	typeref:number
+getUTCHours	_	0;"	f	class:+Date	typeref:number
+getUTCMilliseconds	_	0;"	f	class:+Date	typeref:number
+getUTCMinutes	_	0;"	f	class:+Date	typeref:number
+getUTCMonth	_	0;"	f	class:+Date	typeref:number
+getUTCSeconds	_	0;"	f	class:+Date	typeref:number
+getYear	_	0;"	f	class:+Date	typeref:number
+global	_	0;"	m	class:+RegExp	typeref:bool
+has	_	0;"	f	class:+Map	typeref:bool
+has	_	0;"	f	class:Reflect	typeref:bool
+has	_	0;"	f	class:+Set	typeref:bool
+has	_	0;"	f	class:+WeakMap	typeref:bool
+has	_	0;"	f	class:+WeakSet	typeref:bool
+hasInstance	_	0;"	m	class:Symbol	typeref::Symbol.hasInstance
+hasOwnProperty	_	0;"	f	class:+Object	typeref:bool
+hypot	_	0;"	f	class:Math	typeref:number
+ignoreCase	_	0;"	m	class:+RegExp	typeref:bool
+imul	_	0;"	f	class:Math	typeref:number
+includes	_	0;"	f	class:+Array	typeref:bool
+includes	_	0;"	f	class:+String	typeref:bool
+indexOf	_	0;"	f	class:+Array	typeref:number
+indexOf	_	0;"	f	class:+String	typeref:number
+Infinity	_	0;"	m	typeref:number
+Int16Array	_	0;"	m	typeref:TypedArray
+Int32Array	_	0;"	m	typeref:TypedArray
+Int8Array	_	0;"	m	typeref:TypedArray
+is	_	0;"	f	class:Object	typeref:bool
+isArray	_	0;"	f	class:Array	typeref:bool
+isConcatSpreadable	_	0;"	m	class:Symbol	typeref::Symbol.isConcatSpreadable
+isExtensible	_	0;"	f	class:Object	typeref:bool
+isExtensible	_	0;"	f	class:Reflect	typeref:bool
+isFinite	_	0;"	f	class:Number	typeref:bool
+isFinite	_	0;"	f	typeref:bool
+isFrozen	_	0;"	f	class:Object	typeref:bool
+isInteger	_	0;"	f	class:Number	typeref:bool
+isNaN	_	0;"	f	class:Number	typeref:bool
+isNaN	_	0;"	f	typeref:bool
+isPrototypeOf	_	0;"	f	class:+Object	typeref:bool
+isSafeInteger	_	0;"	f	class:Number	typeref:bool
+isSealed	_	0;"	f	class:Object	typeref:bool
+isView	_	0;"	f	class:ArrayBuffer	typeref:bool
+iterator	_	0;"	m	class:Symbol	typeref::Symbol.iterator
+join	_	0;"	f	class:+Array	typeref:string
+JSON	_	0;"	c	
+keyFor	_	0;"	f	class:Symbol	typeref:string
+keys	_	0;"	f	class:Object	typeref:+Array
+keys	_	0;"	f	class:+Array	typeref:+iter
+keys	_	0;"	f	class:+Map	typeref:+iter
+keys	_	0;"	f	class:+Set	typeref:+iter
+lastIndex	_	0;"	m	class:+RegExp	typeref:number
+lastIndexOf	_	0;"	f	class:+Array	typeref:number
+lastIndexOf	_	0;"	f	class:+String	typeref:number
+length	_	0;"	m	class:+Array	typeref:number
+length	_	0;"	m	class:+String	typeref:number
+LN10	_	0;"	m	class:Math	typeref:number
+LN2	_	0;"	m	class:Math	typeref:number
+localeCompare	_	0;"	f	class:+String	typeref:number
+log	_	0;"	f	class:Math	typeref:number
+log10	_	0;"	f	class:Math	typeref:number
+LOG10E	_	0;"	m	class:Math	typeref:number
+log1p	_	0;"	f	class:Math	typeref:number
+log2	_	0;"	f	class:Math	typeref:number
+LOG2E	_	0;"	m	class:Math	typeref:number
+map	_	0;"	f	class:+Array	typeref:+Array
+Map	_	0;"	f	
+match	_	0;"	f	class:+String	typeref:+Array
+match	_	0;"	m	class:Symbol	typeref::Symbol.match
+Math	_	0;"	c	
+max	_	0;"	f	class:Math	typeref:number
+MAX_SAFE_INTEGER	_	0;"	m	class:Number	typeref:number
+MAX_VALUE	_	0;"	m	class:Number	typeref:number
+message	_	0;"	m	class:+Error	typeref:string
+min	_	0;"	f	class:Math	typeref:number
+MIN_SAFE_INTEGER	_	0;"	m	class:Number	typeref:number
+MIN_VALUE	_	0;"	m	class:Number	typeref:number
+multiline	_	0;"	m	class:+RegExp	typeref:bool
+name	_	0;"	m	class:+Error	typeref:string
+NaN	_	0;"	m	typeref:number
+NEGATIVE_INFINITY	_	0;"	m	class:Number	typeref:number
+normalize	_	0;"	f	class:+String	typeref:string
+now	_	0;"	f	class:Date	typeref:number
+Number	_	0;"	f	typeref:number
+Object	_	0;"	f	
+of	_	0;"	f	class:Array	typeref:+Array
+ownKeys	_	0;"	f	class:Reflect	typeref:+Array
+padEnd	_	0;"	f	class:+String	typeref:string
+padStart	_	0;"	f	class:+String	typeref:string
+parse	_	0;"	f	class:Date	typeref:+Date
+parse	_	0;"	f	class:JSON	
+parseFloat	_	0;"	f	class:Number	typeref:number
+parseFloat	_	0;"	f	typeref:number
+parseInt	_	0;"	f	class:Number	typeref:number
+parseInt	_	0;"	f	typeref:number
+PI	_	0;"	m	class:Math	typeref:number
+pop	_	0;"	f	class:+Array	
+POSITIVE_INFINITY	_	0;"	m	class:Number	typeref:number
+pow	_	0;"	f	class:Math	typeref:number
+preventExtensions	_	0;"	f	class:Object	
+preventExtensions	_	0;"	f	class:Reflect	typeref:bool
+Promise	_	0;"	f	
+propertyIsEnumerable	_	0;"	f	class:+Object	typeref:bool
+Proxy	_	0;"	f	
+push	_	0;"	f	class:+Array	typeref:number
+race	_	0;"	f	class:Promise	
+random	_	0;"	f	class:Math	typeref:number
+RangeError	_	0;"	f	
+raw	_	0;"	f	class:String	typeref:string
+reduce	_	0;"	f	class:+Array	
+reduceRight	_	0;"	f	class:+Array	
+ReferenceError	_	0;"	f	
+Reflect	_	0;"	c	
+RegExp	_	0;"	f	
+reject	_	0;"	m	class:Promise	typeref:Promise_reject
+repeat	_	0;"	f	class:+String	typeref:string
+replace	_	0;"	f	class:+String	typeref:string
+replace	_	0;"	m	class:Symbol	typeref::Symbol.replace
+resolve	_	0;"	f	class:Promise	
+reverse	_	0;"	f	class:+Array	
+revocable	_	0;"	f	class:Proxy	typeref:Proxy_revocable
+round	_	0;"	f	class:Math	typeref:number
+seal	_	0;"	f	class:Object	
+search	_	0;"	f	class:+String	typeref:number
+search	_	0;"	m	class:Symbol	typeref::Symbol.search
+set	_	0;"	f	class:+Map	
+set	_	0;"	f	class:Reflect	typeref:bool
+Set	_	0;"	f	
+set	_	0;"	f	class:+WeakMap	
+setDate	_	0;"	f	class:+Date	typeref:number
+setFloat32	_	0;"	f	class:+DataView	
+setFloat64	_	0;"	f	class:+DataView	
+setFullYear	_	0;"	f	class:+Date	typeref:number
+setHours	_	0;"	f	class:+Date	typeref:number
+setInt16	_	0;"	f	class:+DataView	
+setInt32	_	0;"	f	class:+DataView	
+setInt8	_	0;"	f	class:+DataView	
+setMilliseconds	_	0;"	f	class:+Date	typeref:number
+setMinutes	_	0;"	f	class:+Date	typeref:number
+setMonth	_	0;"	f	class:+Date	typeref:number
+setPrototypeOf	_	0;"	f	class:Object	
+setPrototypeOf	_	0;"	f	class:Reflect	typeref:bool
+setSeconds	_	0;"	f	class:+Date	typeref:number
+setTime	_	0;"	f	class:+Date	typeref:number
+setUint16	_	0;"	f	class:+DataView	
+setUint32	_	0;"	f	class:+DataView	
+setUint8	_	0;"	f	class:+DataView	
+setUTCDate	_	0;"	f	class:+Date	typeref:number
+setUTCFullYear	_	0;"	f	class:+Date	typeref:number
+setUTCHours	_	0;"	f	class:+Date	typeref:number
+setUTCMilliseconds	_	0;"	f	class:+Date	typeref:number
+setUTCMinutes	_	0;"	f	class:+Date	typeref:number
+setUTCMonth	_	0;"	f	class:+Date	typeref:number
+setUTCSeconds	_	0;"	f	class:+Date	typeref:number
+setYear	_	0;"	f	class:+Date	typeref:number
+shift	_	0;"	f	class:+Array	
+sign	_	0;"	f	class:Math	typeref:number
+sin	_	0;"	f	class:Math	typeref:number
+sinh	_	0;"	f	class:Math	typeref:number
+size	_	0;"	m	class:+Map	typeref:number
+size	_	0;"	m	class:+Set	typeref:number
+slice	_	0;"	f	class:+Array	
+slice	_	0;"	f	class:+String	typeref:string
+slice	_	0;"	f	class:+ArrayBuffer	typeref:+ArrayBuffer
+some	_	0;"	f	class:+Array	typeref:bool
+sort	_	0;"	f	class:+Array	typeref:number
+source	_	0;"	m	class:+RegExp	typeref:string
+species	_	0;"	m	class:Symbol	typeref::Symbol.species
+splice	_	0;"	f	class:+Array	typeref:+Array
+split	_	0;"	f	class:+String	typeref:+Array
+split	_	0;"	m	class:Symbol	typeref::Symbol.split
+sqrt	_	0;"	f	class:Math	typeref:number
+SQRT1_2	_	0;"	m	class:Math	typeref:number
+SQRT2	_	0;"	m	class:Math	typeref:number
+startsWith	_	0;"	f	class:+String	typeref:bool
+sticky	_	0;"	m	class:+RegExp	typeref:bool
+String	_	0;"	f	typeref:string
+stringify	_	0;"	f	class:JSON	typeref:string
+substr	_	0;"	f	class:+String	typeref:string
+substring	_	0;"	f	class:+String	typeref:string
+Symbol	_	0;"	f	
+SyntaxError	_	0;"	f	
+tan	_	0;"	f	class:Math	typeref:number
+tanh	_	0;"	f	class:Math	typeref:number
+test	_	0;"	f	class:+RegExp	typeref:bool
+toDateString	_	0;"	f	class:+Date	typeref:string
+toExponential	_	0;"	f	class:+Number	typeref:string
+toFixed	_	0;"	f	class:+Number	typeref:string
+toGMTString	_	0;"	f	class:+Date	typeref:string
+toISOString	_	0;"	f	class:+Date	typeref:string
+toJSON	_	0;"	f	class:+Date	typeref:string
+toLocaleDateString	_	0;"	f	class:+Date	typeref:string
+toLocaleFormat	_	0;"	f	class:+Date	typeref:string
+toLocaleLowerCase	_	0;"	f	class:+String	typeref:string
+toLocaleString	_	0;"	f	class:+Object	typeref:string
+toLocaleString	_	0;"	f	class:+Date	typeref:string
+toLocaleTimeString	_	0;"	f	class:+Date	typeref:string
+toLocaleUpperCase	_	0;"	f	class:+String	typeref:string
+toLowerCase	_	0;"	f	class:+String	typeref:string
+toPrecision	_	0;"	f	class:+Number	typeref:string
+toSource	_	0;"	f	class:+Date	typeref:string
+toString	_	0;"	f	class:+Object	typeref:string
+toString	_	0;"	f	class:+Number	typeref:string
+toString	_	0;"	f	class:+Date	typeref:string
+toStringTag	_	0;"	m	class:Symbol	typeref::Symbol.toStringTag
+toTimeString	_	0;"	f	class:+Date	typeref:string
+toUpperCase	_	0;"	f	class:+String	typeref:string
+toUTCString	_	0;"	f	class:+Date	typeref:string
+trim	_	0;"	f	class:+String	typeref:string
+trimEnd	_	0;"	f	class:+String	typeref:string
+trimLeft	_	0;"	m	class:+String	typeref:String.prototype.trimStart
+trimRight	_	0;"	m	class:+String	typeref:String.prototype.trimEnd
+trimStart	_	0;"	f	class:+String	typeref:string
+trunc	_	0;"	f	class:Math	typeref:number
+TypeError	_	0;"	f	
+Uint16Array	_	0;"	m	typeref:TypedArray
+Uint32Array	_	0;"	m	typeref:TypedArray
+Uint8Array	_	0;"	m	typeref:TypedArray
+Uint8ClampedArray	_	0;"	m	typeref:TypedArray
+undefined	_	0;"	m	typeref:?
+unicode	_	0;"	m	class:+RegExp	typeref:bool
+unscopables	_	0;"	m	class:Symbol	typeref::Symbol.unscopables
+unshift	_	0;"	f	class:+Array	typeref:number
+URIError	_	0;"	f	
+UTC	_	0;"	f	class:Date	typeref:number
+valueOf	_	0;"	f	class:+Object	typeref:number
+valueOf	_	0;"	f	class:+Date	typeref:number
+values	_	0;"	f	class:+Array	typeref:+iter
+values	_	0;"	f	class:+Map	typeref:+iter
+values	_	0;"	f	class:+Set	typeref:+iter
+WeakMap	_	0;"	f	
+WeakSet	_	0;"	f	
