@@ -115,7 +115,6 @@ textadept.editing.autocompleters.javascript = function()
       local assignment = symbol:gsub('(%p)', '%%%1')..'%s*=%s*([^;]-)%s*;?%s*$'
       for i = line_num - 1, 0, -1 do
         local expr = buffer:get_line(i):match(assignment)
-        ui.statusbar_text = expr
         if expr then
           for patt, type in pairs(M.expr_types) do
             if expr:find(patt) then symbol = type break end
@@ -129,7 +128,7 @@ textadept.editing.autocompleters.javascript = function()
       end
     end
   end
-  -- ui.statusbar_text = symbol
+  ui.statusbar_text = symbol
   -- Search through ctags for completions for that symbol.
   local name_patt = '^'..part
   local name_ipatt = ipattern('^'..part)
