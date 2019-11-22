@@ -38,6 +38,25 @@ M.symbol_subst = {
   ['^/.+/[gimuy]*$'] = '+RegExp'
 }
 
+-- Only plain names of JS object are captured
+M.js_object = re.compile[==[
+  js_obj <- {| '{' __ name_val_pair __ (',' __ name_val_pair __)* '}' |}
+  name_val_pair <- name %s* ':' %s* value
+
+  name <- {plain_name} / string_name / paired_bracket
+  value <- (paired_brace / paired_bracket / paired_paren / string / [^,}])+
+  __ <- (%s+ / block_comment / line_comment)*
+  block_comment <- '/*' (!'*/' .)* '*/'
+  line_comment  <- '//' [^%nl]*
+
+  string_name <- '"' ({plain_name} '"' / [^"]* '"') / "'" ({plain_name} "'" / [^']* "'")
+  string      <- '"' [^"]* '"' / "'" [^']* "'"
+  plain_name  <- [a-zA-Z0-9_$]+
+  paired_brace   <- '{' ([^{}] / paired_brace)* '}'
+  paired_bracket <- '[' ([^][] / paired_bracket)* ']'
+  paired_paren   <- '(' ([^()] / paired_paren)* ')'
+]==]
+
 M.js_expr = re.compile[[
   js_line      <- {| js_expr !. / js_expr_nonstart |}
   js_expr_nonstart <- ([^a-zA-Z0-9_$] js_expr / . js_expr_nonstart) !. / . js_expr_nonstart
@@ -52,6 +71,7 @@ local XPM = textadept.editing.XPM_IMAGES
 local xpms = {
   c = XPM.CLASS, f = XPM.METHOD, m = XPM.VARIABLE
 }
+local sep = string.char(buffer.auto_c_type_separator)
 
 local function has_value (tab, val)
   if not tab then
@@ -90,7 +110,6 @@ textadept.editing.autocompleters.javascript = function()
   local matched = M.js_expr:match(line:sub(1, pos))
   if matched then
     rawsymbol, part = matched.symbol, matched.part
-    ui.statusbar_text = part
   else
     return
   end
@@ -107,17 +126,39 @@ textadept.editing.autocompleters.javascript = function()
 
   -- Attempt to identify the symbol type.
   local line_num = buffer:line_from_position(buffer.current_pos)
+  local name_patt = '^'..part
+  local name_ipatt = ipattern('^'..part)
   if rawsymbol and symbol == '' then
     symbol = rawsymbol:match('([%w_%$%.]*)$')
 
     if symbol ~= '' then
       local buffer = buffer
-      local assignment = symbol:gsub('(%p)', '%%%1')..'%s*=%s*([^;]-)%s*;?%s*$'
+      local assignment = symbol:gsub('(%p)', '%%%1')..'%s*=%s*()([^;]-)%s*;?%s*$'
       for i = line_num - 1, 0, -1 do
-        local expr = buffer:get_line(i):match(assignment)
+        local pos, expr = buffer:get_line(i):match(assignment)
         if expr then
+          local symbol_changed = false
           for patt, type in pairs(M.expr_types) do
-            if expr:find(patt) then symbol = type break end
+            if expr:find(patt) then
+              symbol = type
+              symbol_changed = true
+              break
+            end
+          end
+          if symbol_changed then
+            if symbol == '+Object' then
+              local start_pos = buffer:position_from_line(i) + pos - 1
+              local end_pos = buffer:brace_match(start_pos, 0)
+              local obj_props = M.js_object:match(buffer:text_range(start_pos, end_pos + 1))
+              if obj_props then
+                for _, name in ipairs(obj_props) do
+                  if name:match(name_ipatt) then
+                    list[#list + 1] = string.format('%s%s%d', name, sep, xpms.m)
+                  end
+                end
+              end
+            end
+            break
           end
           local new_instance = expr:match('^new%s+([%w_.]+)%s*%b()$')
           if new_instance then
@@ -130,9 +171,6 @@ textadept.editing.autocompleters.javascript = function()
   end
   ui.statusbar_text = symbol
   -- Search through ctags for completions for that symbol.
-  local name_patt = '^'..part
-  local name_ipatt = ipattern('^'..part)
-  local sep = string.char(buffer.auto_c_type_separator)
   ::start::
   for i = 1, #M.tags do
     if lfs.attributes(M.tags[i]) then
