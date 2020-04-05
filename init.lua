@@ -43,9 +43,9 @@ M.js_object = re.compile[==[
   js_obj <- {| '{' __ name_val_pair __ (',' __ name_val_pair __)* '}' |}
   name_val_pair <- name %s* ':' %s* value
 
-  name <- {plain_name} / string_name / paired_bracket
+  name  <- {plain_name} / string_name / paired_bracket
   value <- (paired_brace / paired_bracket / paired_paren / string / [^,}])+
-  __ <- (%s+ / block_comment / line_comment)*
+  __    <- (%s+ / block_comment / line_comment)*
   block_comment <- '/*' (!'*/' .)* '*/'
   line_comment  <- '//' [^%nl]*
 
@@ -126,15 +126,15 @@ textadept.editing.autocompleters.javascript = function()
 
   -- Attempt to identify the symbol type.
   local line_num = buffer:line_from_position(buffer.current_pos)
-  local name_patt = '^'..part
-  local name_ipatt = ipattern('^'..part)
+  local name_patt = '^' .. part
+  local name_ipatt = ipattern('^' .. part)
   if rawsymbol and symbol == '' then
     symbol = rawsymbol:match('([%w_%$%.]*)$')
 
     if symbol ~= '' then
       local buffer = buffer
-      local assignment = symbol:gsub('(%p)', '%%%1')..'%s*=%s*()([^;]-)%s*;?%s*$'
-      for i = line_num - 1, 0, -1 do
+      local assignment = symbol:gsub('(%p)', '%%%1') .. '%s*=%s*()([^;]-)%s*;?%s*$'
+      for i = line_num - 1, 1, -1 do
         local pos, expr = buffer:get_line(i):match(assignment)
         if expr then
           local symbol_changed = false
@@ -147,7 +147,7 @@ textadept.editing.autocompleters.javascript = function()
           end
           if symbol_changed then
             if symbol == '+Object' then
-              local start_pos = buffer:position_from_line(i) + pos - 1
+              local start_pos = buffer:position_from_line(i) + pos
               local end_pos = buffer:brace_match(start_pos, 0)
               local obj_props = M.js_object:match(buffer:text_range(start_pos, end_pos + 1))
               if obj_props then
@@ -172,33 +172,33 @@ textadept.editing.autocompleters.javascript = function()
   ui.statusbar_text = symbol
   -- Search through ctags for completions for that symbol.
   ::start::
-  for i = 1, #M.tags do
-    if lfs.attributes(M.tags[i]) then
-      local hasFound = false
-      for line in io.lines(M.tags[i]) do
-        local name = line:match('^%S+')
-        if name == symbol then
-          local ret = line:match('typeref:(.*)$')
-          if ret then
-            symbol = ret
-            goto start
-          end
-        elseif not name:find(name_patt) then
-          if hasFound and not name:find(name_ipatt) then break end
-        elseif not list[name] then
-          hasFound = true
-          local fields = line:match(';"\t(.*)$')
-          if fields then
-            local k, class = fields:sub(1, 1), fields:match('class:(%S+)') or ''
+  for _, filename in ipairs(M.tags) do
+    if not lfs.attributes(filename) then goto continue end
+    local hasFound = false
+    for line in io.lines(filename) do
+      local name = line:match('^%S+')
+      if name == symbol then
+        local ret = line:match('typeref:(.*)$')
+        if ret then
+          symbol = ret
+          goto start
+        end
+      elseif not name:find(name_patt) then
+        if hasFound and not name:find(name_ipatt) then break end
+      elseif not list[name] then
+        hasFound = true
+        local fields = line:match(';"\t(.*)$')
+        if fields then
+          local k, class = fields:sub(1, 1), fields:match('class:(%S+)') or ''
 
-            if class == symbol then
-              list[#list + 1] = string.format('%s%s%d', name, sep, xpms[k])
-              list[name] = true
-            end
+          if class == symbol then
+            list[#list + 1] = string.format('%s%s%d', name, sep, xpms[k])
+            list[name] = true
           end
         end
       end
     end
+    ::continue::
   end
   return #part, list
 end
