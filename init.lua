@@ -179,7 +179,7 @@ textadept.editing.autocompleters.javascript = function()
       local name = line:match('^%S+')
       if name == symbol then
         local ret = line:match('typeref:(.*)$')
-        if ret then
+        if ret and ret ~= symbol then
           symbol = ret
           goto start
         end
