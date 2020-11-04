@@ -39,7 +39,7 @@ M.symbol_subst = {
 }
 
 -- Only plain names of JS object are captured
-M.js_object = re.compile[==[
+M.js_object = re.compile[=[--lpeg
   js_obj <- {| '{' __ name_val_pair __ (',' __ name_val_pair __)* '}' |}
   name_val_pair <- name %s* ':' %s* value
 
@@ -55,17 +55,18 @@ M.js_object = re.compile[==[
   paired_brace   <- '{' ([^{}] / paired_brace)* '}'
   paired_bracket <- '[' ([^][] / paired_bracket)* ']'
   paired_paren   <- '(' ([^()] / paired_paren)* ')'
-]==]
+]=]
 
-M.js_expr = re.compile[[
-  js_line      <- {| js_expr !. / js_expr_nonstart |}
-  js_expr_nonstart <- ([^a-zA-Z0-9_$] js_expr / . js_expr_nonstart) !. / . js_expr_nonstart
-  js_expr      <- ((jq_selector / prev_token) '.' / '') {:part: %a* :}
+M.js_expr = re.compile[=[--lpeg
+  js_line      <- {| js_recur |}
+  js_recur     <- js_expr !. / . [^a-zA-Z0-9_$]* js_recur / !.
+  js_expr      <- ((jq_selector / prev_token) '.') {:part: %a* :}
+                  / '' {:part: %a+ :}
   jq_selector  <- {:symbol: '$' balanced -> 'jQuery.fn' :} func*
   func         <- '.' %a+ balanced
   prev_token   <- {:symbol: [a-zA-Z0-9_$/'"`]+ :} balanced?
   balanced     <- '(' ([^()] / balanced)* ')'
-]]
+]=]
 
 local XPM = textadept.editing.XPM_IMAGES
 local xpms = {
@@ -107,9 +108,9 @@ textadept.editing.autocompleters.javascript = function()
 
   local symbol = ''
   local rawsymbol, op, part
-  local matched = M.js_expr:match(line:sub(1, pos))
+  local matched = M.js_expr:match(line:sub(1, pos - 1))
   if matched then
-    rawsymbol, part = matched.symbol, matched.part
+    rawsymbol, part = matched.symbol or '', matched.part or ''
   else
     return
   end
