@@ -7,7 +7,7 @@ local M = {}
 events.connect(events.LEXER_LOADED, function(lang)
   if lang == 'javascript' then
     buffer.use_tabs = false
-    buffer.tab_width = 4
+    --buffer.tab_width = 4
   end
 end)
 
@@ -137,6 +137,7 @@ textadept.editing.autocompleters.javascript = function()
       local assignment = symbol:gsub('(%p)', '%%%1') .. '%s*=%s*()([^;]-)%s*;?%s*$'
       for i = line_num - 1, 1, -1 do
         local pos, expr = buffer:get_line(i):match(assignment)
+        print(expr)
         if expr then
           local symbol_changed = false
           for patt, type in pairs(M.expr_types) do
@@ -161,9 +162,13 @@ textadept.editing.autocompleters.javascript = function()
             end
             break
           end
-          local new_instance = expr:match('^new%s+([%w_.]+)%s*%b()$')
+          local new_instance = expr:match('^new%s+([%w_.]+)%s*%b()$') -- e.g. a = new Foo()
           if new_instance then
-            symbol = '+' .. new_instance -- e.g. a = new Foo()
+            if new_instance == 'Image' then
+              symbol = '+Element'
+            else
+              symbol = '+' .. new_instance
+            end
             break
           end
         end
